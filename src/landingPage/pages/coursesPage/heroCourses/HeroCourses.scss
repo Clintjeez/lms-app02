@@ -1,0 +1,236 @@
+@import "src/globalStyles/helpers/variables";
+
+#heroCourses {
+    
+    .container-hero {
+        overflow: visible;
+        .swiper-wrapper{
+            width: 100vh;
+            height: 45vh;
+        }
+        .swiper-container {
+            width: 100%;
+            .swiper-button-next {
+                padding-right: 80px;
+                color: white;
+                opacity: 100%;
+            }
+            .swiper-button-prev{
+                padding-left: 80px;
+                color: white;
+                opacity: 100%;
+            }
+            .swiper-pagination{
+                .swiper-pagination-bullet{
+                    width: 20px;
+                    height: 20px;
+                    background: $grey5;
+                    opacity: 80%;
+                    
+                }
+                .swiper-pagination-bullet-active{
+                    background: $secondaryColor;
+                }
+                
+            }
+          
+          .swiper-slide {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            
+            .content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                background-image: url(./assets/hero-bg.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 100%;
+                
+                .header{
+                    color: white;
+                    padding-bottom: 15px;
+                }
+                    
+                .text-about{
+                    color: white;
+                    padding-bottom: 15px;
+                }
+                .watch{
+                    color: white;
+                    background-color: $secondaryColor;
+                    cursor: pointer;
+                    height: 54px;
+                    width: 144px;
+                    border-radius: 9px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 15px;
+                }
+                }
+            }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 1380px) {
+        #heroCourses{
+            .container-hero{
+                .swiper-container{
+                    .swiper-slide{
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            background-image: url(./assets/hero-bg.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            align-content: center;
+                        .text-about{
+                           padding-left: 300px;
+                           padding-right: 300px;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+
+    @media only screen and (max-width: 1379px) {
+        #heroCourses{
+            .container-hero{
+                .swiper-container{
+                    .swiper-slide{
+                            overflow: hidden;
+                            display: flex;
+                            justify-content: center;
+                            background-image: url(./assets/hero-bg.png);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            align-content: center;
+                        .text-about{
+                           padding-left: 200px;
+                           padding-right: 200px;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+
+    @media only screen and (max-width: 900px) {
+        #heroCourses{
+            .container-hero{
+                .swiper-wrapper{
+                    height: 45vh;
+                }
+                .swiper-container{
+                    .swiper-button-next {
+                        padding-right: 40px;
+                        
+                    }
+                    .swiper-button-prev{
+                        padding-left: 40px;
+                        
+                    }
+                    .swiper-slide{
+                        .content{
+                        .text-about{
+                           padding-left: 150px;
+                           padding-right: 150px;
+                        }
+                        .watch{
+                            
+                        }
+                    }
+                    }
+                }
+            }
+        }   
+    }
+
+    @media only screen and (max-width: 750px) {
+        #heroCourses{
+            .container-hero{
+                .swiper-wrapper{
+                    height: 45vh;
+                }
+                .swiper-container{
+                    .swiper-button-next {
+                        padding-right: 30px;
+                        
+                    }
+                    .swiper-button-prev{
+                        padding-left: 30px;
+                        
+                    }
+                    .swiper-slide{
+                        .content{
+                        .text-about{
+                           padding-left: 100px;
+                           padding-right: 100px;
+                        }
+                        .watch{
+                            margin-bottom: 0;
+                        }
+                    }
+                    }
+                }
+            }
+        }   
+    }
+
+    @media only screen and (max-width: 550px) {
+        #heroCourses{
+            .container-hero{
+                .swiper-wrapper{
+                    height: calc(100vh - 90px);
+                }
+                .swiper-container{
+                    .swiper-button-next {
+                        padding-right: 20px;
+                        
+                    }
+                    .swiper-button-prev{
+                        padding-left: 20px;
+                        
+                    }
+                    .swiper-slide{
+                        .text-about{
+                           
+                        }
+                    }
+                }
+            }
+        } 
+    }
+
+    @media only screen and (max-width: 425px) {
+        #heroCourses{
+            .container-hero{
+                .swiper-wrapper{
+                    height: calc(100vh - 90px);
+                }
+                .swiper-container{
+                    .swiper-button-next {
+                        padding-right: 20px;
+                        
+                    }
+                    .swiper-button-prev{
+                        padding-left: 20px;
+                        
+                    }
+                    .swiper-slide{
+                        .text-about{
+                           display: none;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+
+

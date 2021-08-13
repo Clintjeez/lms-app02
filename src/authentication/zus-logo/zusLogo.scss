@@ -1,0 +1,34 @@
+@import "../../globalStyles/typography/typography";
+
+// Desktop
+@media screen and (min-width: 1024px) {
+  .signup-logo {
+    img {
+      height: 45px;
+      width: 45px;
+      margin-right: 1.5em;
+    }
+    span {
+      font-size: 24px;
+    }
+  }
+}
+
+// Mobile
+.signup-logo {
+  display: flex;
+  align-items: center;
+  img {
+    height: 25px;
+    margin-bottom: 3px;
+    width: 25px;
+    margin-right: 1em;
+  }
+  span {
+    font-size: 14px;
+    font-family: $font-nunito;
+    text-transform: uppercase;
+    letter-spacing: 0.35em;
+  }
+}
+

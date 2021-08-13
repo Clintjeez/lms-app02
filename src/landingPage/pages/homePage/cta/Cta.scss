@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import "../../../../globalStyles/helpers/variables";
+
+#cta-section {
+    background: $secondaryColor;
+    height: 393px;
+    .container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .heading {
+            color: $offWhite;
+            padding-bottom: 30px;
+            }
+        
+        .info {
+            color: $offWhite;
+            text-align: center;
+            padding-bottom: 30px;
+            padding-left: 120px;
+            padding-right: 120px;
+            }
+            .cta-trial-btn {
+                width: 230px;
+                height: 70px;
+                box-sizing: border-box;
+                border-radius: 10px;
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 0.045em;
+                cursor: pointer;
+                color: $lightGrey;
+                background-color: $secondaryColor;
+                border: 2px solid $lightGrey;
+            }
+        } 
+        
+}
+
+// // responsive with small window on desktop browser
+// @media (min-width: 1220px) and (max-width: 1440px) {
+//     #cta-section {
+//         .cta-box {
+//             // margin: 49px 0px 49px 0px;
+//             // height: 250px;
+//         }
+    
+//         .cta-text {
+//             width: 600px;
+//             h1 {
+//                 // font-size: 45px;
+//                 // line-height: 48px;
+//                 margin-top: -30px;
+//             }
+//             p {
+//                 margin-top: 5px;
+//             }
+//         }
+    
+//         .cta-trial-btn {
+//             width: 190px;
+//             height: 55px;
+//             font-size: 20px;
+//             line-height: 24px;
+//             margin-top: 25px;
+//         } 
+//     }
+// }
+
+@media only screen and (max-width: 884px) {
+    #cta-section {
+        .container {
+            .heading {
+                padding-bottom: 20px;
+            }
+            .info {
+                padding-bottom: 5px;
+                padding-left: 70px;
+                padding-right: 70px;
+            }
+            .btn-wrapper {
+                padding-bottom: 20px;
+                .cta-trial-btn {
+                    width: 180px;
+                    height: 60px;
+                    margin-top: 25px;
+                    line-height: 20px;
+                } 
+            }   
+        }
+    }   
+}
+
+@media only screen and (max-width: 460px){
+    #cta-section {
+        .container {
+            .heading {
+                padding-top: 20px;
+                padding-right: 0;
+                padding-left: 0;
+            }
+            .info {
+                padding-bottom: 5px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .btn-wrapper {
+                padding-bottom: 20px;
+                .cta-trial-btn {
+                    width: 130px;
+                    height: 50px;
+                    margin-top: 15px;
+                    line-height: 20px;
+                } 
+            }  
+        }
+    }
+}
+
+@media only screen and (max-width: 370px){
+    #cta-section{
+        .container{
+            .heading{
+                font-size: 30px;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+            .info {
+                padding-bottom: 5px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .btn-wrapper {
+                padding-bottom: 20px;
+                .cta-trial-btn {
+                    width: 130px;
+                    height: 50px;
+                    margin-top: 15px;
+                    line-height: 20px;
+                } 
+            }   
+        }
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #cta-section{
+        .container{
+            .heading{
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+            .info {
+                padding-bottom: 5px;
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            .btn-wrapper {
+                padding-bottom: 20px;
+                .cta-trial-btn {
+                    width: 130px;
+                    height: 50px;
+                    margin-top: 15px;
+                    line-height: 20px;
+                } 
+            }   
+        }
+    }
+}

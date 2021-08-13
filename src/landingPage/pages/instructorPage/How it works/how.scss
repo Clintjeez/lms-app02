@@ -1,0 +1,71 @@
+@import "../../../../globalStyles/helpers/variables";
+
+#how {
+  background: $lightGrey;
+  padding-top: 3rem;
+  position: relative;
+  .full-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 600px;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .container {
+    .title {
+      text-align: center;
+      color: $secondaryColor;
+      padding: 2rem 0;
+    }
+    .section-controls {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin: 1rem 0 3rem 0;
+      .step {
+        .active-btn {
+          background: $secondaryColor;
+          h2 {
+            color: white;
+          }
+        }
+        button {
+          width: 75px;
+          height: 75px;
+          border-radius: 50%;
+          background: white;
+          box-shadow: 0px 2.31795px 2.31795px rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+          h2 {
+            color: $grey4;
+          }
+        }
+      }
+    }
+    .slides-mobile {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #how {
+    .full-wave {
+      display: none;
+    }
+    .container {
+      .title {
+        padding: 0;
+      }
+      .slides,
+      .section-controls {
+        display: none;
+      }
+      .slides-mobile {
+        display: block;
+      }
+    }
+  }
+}

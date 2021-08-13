@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Handles basic responsiveness */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.container {
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section:last-of-type {
+  margin: 0 auto;
+}
+
+section:first-of-type {
+  margin-top: 90px;
+}
+ol, ul, dl{  
+  margin-bottom: 0 !important;
+}
+
+p{
+  margin-bottom: 0 !important;
+}
+// section {
+//   margin: 4rem 0;
+// }

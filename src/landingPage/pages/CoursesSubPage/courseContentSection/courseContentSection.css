@@ -1,0 +1,87 @@
+#CourseContentSection {
+  margin: 20px;
+}
+
+#CourseContentSection .ant-collapse-header, #CourseContentSection #CourseContentSectionTitle p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.06em;
+  color: #03023B;
+}
+
+#CourseContentSection #CourseContentSectionTitle p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#CourseContentSection #viewAll {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#CourseContentSection #viewAll button {
+  margin: auto;
+  background: #3A86FF;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  height: 48px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 481px) {
+  #CourseContentSection {
+    margin: 60px 80px;
+  }
+  #CourseContentSection #CourseContentSectionTitle p {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #CourseContentSection {
+    margin: 60px 15vw;
+  }
+  #CourseContentSection .ant-collapse-header, #CourseContentSection #CourseContentSectionTitle p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  #CourseContentSection #CourseContentSectionTitle p {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+/*# sourceMappingURL=courseContentSection.css.map */

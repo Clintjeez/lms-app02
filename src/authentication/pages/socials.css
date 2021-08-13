@@ -1,0 +1,19 @@
+.social-media p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #03023b;
+  text-align: center;
+}
+
+.social-media img {
+  max-width: 56px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 347px) {
+  .social-media img {
+    max-width: 48px;
+    margin: 1rem;
+  }
+}
+/*# sourceMappingURL=socials.css.map */

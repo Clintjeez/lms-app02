@@ -1,0 +1,214 @@
+/*====================================================================================================================
+    This file contains all the global styles import for the entire application
+=====================================================================================================================*/
+/*---------------------------------------------------------------------------------------------------------------------
+  Helpers:
+  This are no styles but sass mechanisms that helps define styles in other directory. 
+  This includes like global variables,functions and mixins. 
+-----------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------
+  Base:
+  This contains boilerplate used throughout the entire application. 
+  This includes project-wide typography styles, and stylesheets 
+  that universally reset or normalize default CSS.
+-----------------------------------------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Handles basic responsiveness */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.container {
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section:last-of-type {
+  margin: 0 auto;
+}
+
+section:first-of-type {
+  margin-top: 90px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------
+  Typography: 
+-----------------------------------------------------------------------------------------------------------------------*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: 5%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  letter-spacing: 3%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h3,
+h4 {
+  letter-spacing: 2%;
+}
+
+p {
+  line-height: 140%;
+  color: var(--dark-blue);
+  font-size: 1rem;
+  letter-spacing: 6%;
+}
+
+.link {
+  font-weight: 700;
+  letter-spacing: 6%;
+  text-decoration: underline;
+  color: var(--light-blue);
+}
+
+.pre-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 35.5%;
+  text-transform: uppercase;
+}
+
+.small-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .display {
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 2.125rem;
+  }
+}
+
+/*---------------------------------------------------------------------------------------------------------------------
+  Layout: 
+  This contains styles for different aspects of the site's structural layout 
+  (think of areas like nav bars, headers, footers, etc.)
+-----------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------
+  Vendors: 
+-----------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------
+  Components: 
+  This contain default styles for basic reuseable UI elements like (buttons, cards, form-fields, and others) 
+-----------------------------------------------------------------------------------------------------------------------*/
+.btn-primary {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: #0837e5;
+  border: 2px solid #0837e5;
+  color: #fdfdfd;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  border: 2px solid #0837e5;
+  color: #0837e5;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+:root {
+  --input-border: 1px solid;
+  --input-active-border:  #3A86FF;
+  --input-valid-border:  #31d0aa;
+  --input-error-border:  #ed6868;
+  --input-shadow: 0px 0px 0px 4px;
+  --input-active-shadow: rgba(78, 147, 255, 0.2);
+  --input-valid-shadow: rgba(49, 208, 170, 0.2);
+  --input-error-shadow: rgba(237, 104, 104, 0.2);
+  --input-radius: 8px;
+}
+
+*,
+input::before,
+input::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 2px;
+}
+
+input:required:focus:enabled {
+  border: var(--input-border) var(--input-active-border);
+  -webkit-box-shadow: var(--input-shadow) var(--input-active-shadow);
+          box-shadow: var(--input-shadow) var(--input-active-shadow);
+  border-radius: var(--input-radius);
+}
+
+input:required:valid {
+  border: var(--input-border) var(--input-valid-border);
+  -webkit-box-shadow: var(--input-shadow) var(--input-valid-shadow);
+          box-shadow: var(--input-shadow) var(--input-valid-shadow);
+  border-radius: var(--input-radius);
+}
+
+input:focus:required:invalid {
+  border: var(--input-border) var(--input-error-border);
+  -webkit-box-shadow: var(--input-shadow) var(--input-error-shadow);
+          box-shadow: var(--input-shadow) var(--input-error-shadow);
+  border-radius: var(--input-radius);
+}
+/*# sourceMappingURL=index.css.map */

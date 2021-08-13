@@ -1,0 +1,100 @@
+@import "../../globalStyles/helpers/variables";
+
+.course-card {
+  width: 100%;
+  min-width: 230px;
+  max-width: 353px;
+  height: 100%;
+  min-height: 225px;
+  max-height: 334px;
+  border-radius: var(--normal-radius);
+  box-shadow: 0px 3.81753px 3.81753px rgba(0, 0, 0, 0.1);
+  border-radius: $large-radius;
+  .course-image {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    img {
+      width: 100%;
+      border-top-left-radius: $large-radius;
+      border-top-right-radius: $large-radius;
+    }
+    .image-overlay {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: $pureWhite;
+      background: rgba(0, 0, 0, 0.5);
+      border-top-left-radius: $large-radius;
+      border-top-right-radius: $large-radius;
+      transition: opacity 0.3s ease;
+      opacity: 0;
+      &:hover {
+        opacity: 1;
+      }
+      & > * {
+        margin-left: 2rem;
+        margin-bottom: 4px;
+      }
+      h3 {
+        color: $pureWhite;
+      }
+    }
+  }
+  .course-info {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.25rem;
+    h3 {
+      margin-bottom: 8px;
+    }
+    hr {
+      color: $grey6;
+    }
+    .course-stats {
+      display: flex;
+      margin: 8px 0;
+      .course-rating {
+        display: flex;
+        span {
+          font-size: 14px;
+          margin: 0 10px;
+        }
+        .rating-value {
+          color: $successColor;
+          font-weight: 500;
+        }
+        .rating-count {
+          color: $grey2;
+        }
+      }
+      .course-level {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 11%;
+        &::after {
+          position: absolute;
+          right: 0;
+          content: "";
+          width: 2px;
+          height: 86%;
+          background: $grey5;
+          color: $grey5;
+        }
+        img {
+          height: 80%;
+        }
+      }
+    }
+    .author {
+      color: $grey3;
+      font-size: 14px;
+    }
+  }
+}

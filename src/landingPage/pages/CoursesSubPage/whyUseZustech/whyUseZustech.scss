@@ -1,0 +1,85 @@
+
+
+#whyUseZustech {
+    margin: 20px 0px;
+    padding: 30px;
+    background-image: url("./assets/whyBackgroundMobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F8F8F8;
+    p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.06em;
+        color: #03023B;
+    }
+    #sectionTitle {
+        text-align: center;
+    }
+
+
+    #reasons {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4 25%);
+        img {
+            margin: auto;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            margin: 40px 0px;
+        }
+        div {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1;
+        }
+    }
+}
+
+
+//min-width: 481px:
+@media only screen and (min-width: 481px) {
+    #whyUseZustech {
+        background-image: url("./assets/whyBackgroundTablet.png");
+        padding: 5% 15vw;
+        
+        #sectionTitle {
+            text-align: start;
+            margin-left: 4vw;
+        }
+        #reasons {
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(2, 50%);
+        }
+    }
+
+}
+
+//min-width: 769px:
+@media only screen and (min-width: 769px) {
+    #whyUseZustech {
+        background-image: url("./assets/whyBackgroundLaptop.png");
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 50%);
+
+        p {
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.02em;
+        }
+        img {
+            width: 80px;
+        }
+    }
+
+}
+
+
+//min-width: 1024px:
+@media only screen and (min-width: 1024px) {
+
+}

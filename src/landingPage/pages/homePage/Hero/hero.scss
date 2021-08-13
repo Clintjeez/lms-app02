@@ -1,0 +1,400 @@
+@import '../../../../globalStyles/helpers/variables.scss';
+* {
+    font-family: 'Roboto';
+    color: $darkColor;
+    margin: 0;
+    padding: 0;
+}
+
+#hero{
+/* Screens between mobile 375px to tablet 768px*/
+    .btn{
+        border: none;
+        background: none;
+    }
+    input{
+        padding-left: 15px;
+    }
+    input:focus{
+        color: $body;
+        outline: $secondaryColor;
+        border-radius: $medium-radius;
+    }
+    h1{
+        font-weight: bold;
+        font-size: $largeHeadings;
+        line-height: 36px;
+        letter-spacing: 0.02em;
+    }
+    span{
+        color: $secondaryColor;
+        font-style: normal;
+        font-weight: 900;
+        font-size: $largeHeadings;
+        line-height: 39px;
+        letter-spacing: 0.05em;
+        white-space: nowrap;
+    }
+
+    .intro{
+        padding-top: 60px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero1{
+        height: 131.08px;
+        width: auto;
+        transform: translate(0px, 40px);
+    }
+    .hero2{
+        height: 131.31px;
+        width: auto;
+        transform: translate(-75px, 20px);
+    }
+    .hero3{
+        height: 133.68px;
+        width: auto;
+        transform: translate(65px, -90px);
+    }
+    .cta-input{
+        display: none;
+        width: 0;
+    }
+    .cta-form{
+        display: none;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .cta-form-2{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    .cta-submit-btn{
+        width: 100%;
+        height: 45px;
+        font-weight: 700;
+        font-size: $body;
+        text-align: center;
+        letter-spacing: 0.04em;
+        margin: 0;
+        color: #ffffff;
+        background: $secondaryColor;
+        border-radius: 8px;
+    }
+
+    .cta-text{
+        width: auto;
+        padding-top: 30px;
+        font-size: $smallHeadings;
+        line-height: 26px;
+        font-weight: normal;
+        letter-spacing: 0.06em;
+    }
+
+    .feature-points{
+        padding-top: 20px;
+        width: 90%;
+        display: none;
+        justify-content: space-between;
+    }
+    .feature-points-2{
+        padding-top: 20px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bullet{
+        list-style: none;
+        background: url(./assets/mobileTickcircle.png) no-repeat;
+        font-size: $body;
+        padding-left: 20px;
+    }
+
+
+    /* Screens between 756px to 1200px hopefully || Follow Ipad low fid designs*/
+    @media only screen and (min-width: 756px) and (max-width: 1200px) {
+        .bg{
+            background: url(./assets/geometric.png) no-repeat;
+            background-position: right;
+            background-size: 40vw auto;
+        }
+        
+        .intro{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            text-align: left;
+        }
+        .container{
+            max-width: 1220px;
+            width: 90vw;
+            margin: 0 auto;
+        }
+        .title{
+            
+            font-weight: bold;
+            font-size: 39px;
+            line-height: 45.75px;
+            letter-spacing: 2%;
+            text-align: left;
+        }
+        span{
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 51.47px;
+            letter-spacing: 5%;
+        }
+        .hero{
+            display: grid;
+            grid-template-columns: 60% 40%;
+        }
+
+        .hero-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-right{
+            display: flex;
+            flex-direction: column;
+            justify-content: none;
+        }
+        .hero1{
+            height: 180px;
+            width: auto;
+            transform: translate(20px, 100px);
+        }
+        .hero2{
+            height: 180px;
+            width: auto;
+            transform: translate(-110px, 20px);
+        }
+        .hero3{
+            height: 180px;
+            width: auto;
+            transform: translate(60px, -60px);
+        }
+        .cta-input{
+            display: block; // make input visible
+            width: 33vw;
+            height: 50px;
+            border: 3px solid $secondaryColor;
+            border-radius: .25em;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 140%;
+        }
+        .cta-submit-btn{
+            width: 175px;
+            height: 50px;
+            font-weight: 700;
+            font-size: $body;
+            text-align: center;
+            letter-spacing: 0.04em;
+            margin: 0;
+            transform: translate(-5px, 0px);
+            color: #ffffff;
+            background: $secondaryColor;
+            border-radius: 0px 8px 8px 0px;
+        }
+        .cta-form{
+            display: flex;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .cta-form-2{
+            display: none;
+        }
+        .cta-text{
+            width: auto;
+            font-size: $body;
+            line-height: 26px;
+            letter-spacing: 0.06em;
+        }
+        .feature-points{
+            padding-top: 40px;
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .feature-points-2{
+            display: none;
+        }
+        .bullet{
+            list-style: none;
+            background: url(./assets/mobileTickcircle.png) no-repeat;
+            font-size: $smallHeadings;
+            padding-left: 20px;
+        }
+        
+        
+    }
+    /* Screens above 1200px*/
+    @media only screen and (min-width: 1200px) {
+        .bg{
+            background: url(./assets/geometric.png) no-repeat;
+            background-position: right;
+        }
+        .intro{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .container{
+            max-width: 1440px;
+            width: 90vw;
+            margin: 0 auto;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 64px;
+            line-height: 60px;
+            text-align: left;
+        }
+        span{
+            font-weight: 900;
+            font-size: 72px;
+            line-height: 84.38px;
+        }
+        .hero{
+            display: grid;
+            grid-template-columns: 55% 45%;
+        }
+
+        .hero-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-right{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero1{
+            height: 250px;
+            width: auto;
+            transform: translate(0px, 140px);
+        }
+
+        .hero2{
+            height: 250px;
+            width: auto;
+            transform: translate(-160px, 80px);
+        }
+
+        .hero3{
+            height: 254.51px;
+            width: auto;
+            transform: translate(130px, -105px);
+        }
+        .cta-input{
+            display: block; // make input visible
+            width: 33vw;
+            height: 60px;
+            border: 3px solid $secondaryColor;
+            border-radius: .25em;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 140%;
+        }
+        .cta-submit-btn{
+            max-width: 200px;
+            height: 60px;
+            font-weight: 700;
+            font-size: $smallHeadings;
+            text-align: center;
+            letter-spacing: 0.04em;
+            margin: 0;
+            transform: translate(-5px, 0px);
+            color: #ffffff;
+            background: $secondaryColor;
+            border-radius: 0px $normal-radius $normal-radius 0px;
+        }
+        .cta-form{
+            display: flex;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cta-text{
+            width: auto;
+            font-size: $smallHeadings;
+            line-height: 26px;
+            letter-spacing: 0.06em;
+        }
+        .feature-points{
+            width: 90%;
+            list-style: none;
+        }
+        .bullet{
+            background: url(./assets/tickcircle.png) no-repeat;
+            height: 40px;
+            font-size: $smallHeadings;
+            padding-left: 40px;
+            line-height: 30px;
+        }  
+        .feature-points{
+            display: flex;
+        }
+        .feature-points-2{
+            display: none;
+        }
+        .cta-form{
+            max-width: 90%;
+        }
+        .cta-form-2{
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 1440px) {
+        .hero1{
+            height: 250px;
+            width: auto;
+            transform: translate(0px, 140px);
+        }
+
+        .hero2{
+            height: 250px;
+            width: auto;
+            transform: translate(-160px, 80px);
+        }
+
+        .hero3{
+            height: 254.51px;
+            width: auto;
+            transform: translate(100px, -105px);
+        }
+        .container{
+            max-width: 2560px;
+        }
+
+    }
+}

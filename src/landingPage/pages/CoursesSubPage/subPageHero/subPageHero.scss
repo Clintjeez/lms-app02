@@ -1,0 +1,329 @@
+
+
+
+#SubPageHero{
+    // margin: 10px 20px !important;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: 2fr;
+
+    #section-1 {
+    grid-column: 2;
+    }
+    //Path
+    #path {
+        display: none;
+        a {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.06em;
+            color: #4F4F4F;
+        }
+    }
+
+    //Course Info 
+    .courseInfo {
+        margin: auto;
+        h1 {
+            color: #03023B;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            letter-spacing: 0.02em
+            
+        }
+    }
+    .courseRating {
+        display: flex;
+        align-items: flex-start;
+        .rating-value{
+            color:#46D5B3;
+            font-weight: bold;
+            letter-spacing: 0.06em
+        }
+        .stars {
+            margin: 0px 10px;
+        }
+        .rating-count {
+            letter-spacing: 0.06em
+        }
+
+    }
+
+    #courseDescription {
+        color: #03023B;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+    }
+
+
+    #HeroImage {
+        width: 306px;
+        height: 211px;
+        border-radius: 10px;
+        margin: auto;
+        background-image: url("./assets/hero-bg.png");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #previewButton {
+        background-color: white;
+        padding: 14px 27px;
+        border-radius: 50px;
+        width: 170px;
+        height: 48px;
+        box-shadow: inset 0px -1.125px 0.5625px rgba(14, 14, 44, 0.4);
+        color: #03023B;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        cursor: pointer;
+    }
+
+
+    //courseStats
+    .courseStats {
+        margin: 10px 0px;
+        padding: 10px;
+        grid-row: 2;
+        grid-column: span 3;
+        background-color: #F2F2F2;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        h3{
+            color: #03023B;
+            font-size: 16px;
+            letter-spacing: 0.06em
+        }
+        p{
+            color: #4F4F4F;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.04em
+        }
+        
+    }
+    #courseDifficulty {
+        display: grid;
+        grid-column: 1;
+        grid-template-rows: repeat(2, 50%);
+        img {
+            grid-row: 1;
+            margin: auto;
+            width: 20px;
+        }
+        p{
+            grid-row: 2;
+            margin: auto;
+        }
+    }
+
+    #studentEnrolled{
+        display: grid;
+        grid-column: 2;
+        grid-template-rows: repeat(2, 50%);
+        h3{
+            grid-row: 1;
+            margin: auto;
+        }
+        p{            
+            grid-row: 2;
+            margin: auto;
+        }
+    }
+    #numProjects{
+        display: grid;
+        grid-column: 3;
+        grid-template-rows: repeat(2, 50%);
+        h3{
+            grid-row: 1;
+            margin: auto;
+        }
+        p{
+            grid-row: 2;
+            margin: auto;
+        }
+    }
+    #hoursOfContent{
+        display: grid;
+        grid-column: 4;
+        grid-template-rows: repeat(2, 50%);
+        h3{
+            grid-row: 1;
+            margin: auto;
+        }
+        p{
+            grid-row: 2;
+            margin: auto;
+        }
+    }
+
+
+
+    .trialStart {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: #3A86FF;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 13.5px 27px;
+        border-radius: 9px;
+        cursor: pointer;
+    }
+
+    #courseTrialOne, #courseTrialTwo {
+        p {
+            color: #828282;
+            font-size: 12px;;
+            font-weight: 500;
+            text-align: center;
+            margin:10px 60px;
+        }
+    }
+    #courseTrialOne {
+        display: none;
+    }
+    #courseTrialTwo {
+        grid-row: 3;
+        grid-column: 2;
+    }
+}
+
+
+//min-width: 481px:
+    @media only screen and (min-width: 481px) {
+        #SubPageHero{
+            grid-template-columns: 4vw 1fr 4vw;
+            width: 100%;
+            display: grid;
+            
+        
+            #section-1 {
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: 2fr;
+            }
+
+            .courseInfo {
+                grid-column: 1;
+                padding-right: 1vw;
+            }
+
+            .courseStats {
+                margin: auto;
+                width: 546px;
+                height: 101px;
+                border-radius: 10px;
+                position: relative;
+                grid-column: 2;
+                grid-row: 2;
+                /* Card shadow*/
+                box-shadow: 0px 4.32px 4.32px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+
+
+            #HeroImage {
+                grid-column: 2;
+                width: 100%;
+                height: 100%;
+                max-width: 374.64px;
+                max-height: 252px;
+                margin: 0px auto;
+            }
+
+
+            #courseTrialOne {
+                display: grid;
+                grid-template-columns: repeat(2, 50%);
+                margin: 40px auto;
+
+                p {
+                    margin: 0px;
+                    padding: 10px;
+                }
+            }
+            #courseTrialTwo {
+                display: none;
+            }
+        }
+    }
+
+
+//min-width: 769px:
+    @media only screen and (min-width: 769px) {
+        #SubPageHero{
+            grid-template-rows: 40px 2fr 120px;
+        
+            #path {
+                display: block;
+                grid-row: 1;
+                grid-column: 2;
+            }
+            #section-1 {
+                grid-row: 2;
+            }
+
+            #courseTrialOne {
+                p{
+                    font-size: 14px;
+                    line-height: 140%;
+                }
+            }
+
+            #HeroImage {
+                grid-column: 2;
+                width: 100%;
+                height: 100%;
+                max-width: 600px;
+                max-height: 382px;
+                margin: 0px auto;
+            }
+
+            .courseInfo{
+                h1 {
+                    font-size: 40px;
+                    line-height: 48px;
+                    letter-spacing: 0.03em;
+                }
+            }
+            #courseDifficulty img{
+                width: 44px;
+            }
+            .courseStats {
+                grid-row: 3;
+                width: 100%;
+                max-width: 888px;
+                h3 {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    //min-width: 1024px:
+    @media only screen and (min-width: 1024px) {
+        #SubPageHero{
+            grid-template-columns: 15vw 2fr 15vw;
+        }
+    }

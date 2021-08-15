@@ -94,12 +94,15 @@ const Register = () => {
 
   // get functions to build form with useForm() hook
   const { register, handleSubmit, formState } = useForm(formOptions);
+
   const { errors } = formState;
 
-  const onSubmit = () => {
+  const onSubmit = (form) => {
+    form.preventDefault();
     const info = {
       ...user,
-      countryId: Number(user.countryId),
+      username: user.email,
+      countryId: 2,
       deviceId: deviceId,
     };
 
@@ -150,11 +153,7 @@ const Register = () => {
               <img src={Exit} alt="exit-cross" className="return-home-right" />
             </Link>
           </div>
-          <form
-            className="signup-form"
-            onSubmit={handleSubmit(onSubmit)}
-            noValidate
-          >
+          <form className="signup-form" onSubmit={onSubmit} noValidate>
             <div className="form-btn">
               <Link to="/login">
                 <button type="button" className="signIn-btn">
@@ -171,58 +170,38 @@ const Register = () => {
               <h1 className="title">Let's get started</h1>
               <p className="cta-text">Enter your details to begin learning</p>
             </div>
-            <div className="top-row">
-              <div>
-                <div className="form-field">
-                  <input
-                    {...register("firstName")}
-                    type="text"
-                    className="form-control"
-                    placeholder="First Name"
-                    name="firstName"
-                    value={user.firstName}
-                    onChange={(e) => handleInputChange(e)}
-                    required
-                  />
-                  <p className="asterisk">*</p>
-                </div>
-                <div className="error">{errors.firstName?.message}</div>
-              </div>
-              <div>
-                <div className="form-field">
-                  <input
-                    {...register("lastName")}
-                    type="text"
-                    className="form-control"
-                    placeholder="Last Name"
-                    name="lastName"
-                    value={user.lastName}
-                    onChange={(e) => handleInputChange(e)}
-                    required
-                  />
-                  <p className="asterisk">*</p>
-                </div>
-                <div className="error">{errors.lastName?.message}</div>
-              </div>
-            </div>
 
             <div className="form-inputs">
-              <div>
-                <div className="form-field">
-                  <input
-                    {...register("username")}
-                    type="text"
-                    className="form-control"
-                    placeholder="Username"
-                    name="username"
-                    value={user.username}
-                    onChange={(e) => handleInputChange(e)}
-                    required
-                  />
-                  <p className="asterisk">*</p>
-                </div>
-                <div className="error">{errors.username?.message}</div>
+              <div className="form-field">
+                <input
+                  {...register("firstName")}
+                  type="text"
+                  className="form-control"
+                  placeholder="First Name"
+                  name="firstName"
+                  value={user.firstName}
+                  onChange={(e) => handleInputChange(e)}
+                  required
+                />
+                <p className="asterisk">*</p>
               </div>
+              <div className="error">{errors.firstName?.message}</div>
+            </div>
+            <div className="form-inputs">
+              <div className="form-field">
+                <input
+                  {...register("lastName")}
+                  type="text"
+                  className="form-control"
+                  placeholder="Last Name"
+                  name="lastName"
+                  value={user.lastName}
+                  onChange={(e) => handleInputChange(e)}
+                  required
+                />
+                <p className="asterisk">*</p>
+              </div>
+              <div className="error">{errors.lastName?.message}</div>
             </div>
 
             <div className="form-inputs">
@@ -282,24 +261,6 @@ const Register = () => {
                   <span className="password-toggle-icon">{ToggleIcon}</span>
                 </div>
                 <div className="error">{errors.confirmPassword?.message}</div>
-              </div>
-            </div>
-
-            <div className="form-inputs">
-              <div className="form-field">
-                <select
-                  className="form-control"
-                  name="countryId"
-                  value={user.countryId}
-                  onChange={(e) => handleInputChange(e)}
-                  required
-                >
-                  <option value={1}>Brazil</option>
-                  <option value={2}>Brazil</option>
-                  <option value={3}>Brazil</option>
-                  <option value={4}>Brazil</option>
-                </select>
-                <p className="asterisk">*</p>
               </div>
             </div>
 

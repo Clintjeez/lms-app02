@@ -28,6 +28,7 @@ const Login = ({ successAction, errorAction }) => {
     deviceId: "",
   });
 
+
   const [checked, setChecked] = useState(false);
 
   const [deviceId, setDeviceId] = useState("");
@@ -57,12 +58,12 @@ const Login = ({ successAction, errorAction }) => {
   const { loading } = useSelector((state) => state.auth);
   const history = useHistory();
 
-  const onSubmit = () => {
+  const onSubmit = (form) => {
     const info = {
       ...user,
       deviceId: deviceId,
     };
-
+    form.preventDefault();
     dispatch(loginAsync(info, history));
   };
 
@@ -83,7 +84,7 @@ const Login = ({ successAction, errorAction }) => {
     <section id="signin">
       <div className="container">
         <main>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form onSubmit={onSubmit}>
             <div className="form-container">
               <div className="form-btn">
                 <Link to="/login">

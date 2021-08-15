@@ -9,11 +9,15 @@ if (accessToken) {
 }
 
 export const userLogin = (data) => {
-  return axios({
-    method: "POST",
-    url: loginUrl,
-    data,
-  });
+  // return axios({
+  //   method: "POST",
+  //   url: loginUrl,
+  //   data,
+  // });
+  const res = fetch(loginUrl,{ 
+    method:"POST",
+  body:data,
+  headers:{"Accept":"application/json",}})
 };
 
 export const userSignup = (data) => {

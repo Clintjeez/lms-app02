@@ -12,9 +12,17 @@ export const userLogin = (data) => {
   return axios({
     method: "POST",
     url: loginUrl,
-    data,
+    data: JSON.stringify(data),
   });
-};;
+};
+
+export const passwordRest = (data) => {
+  return axios({
+    method: "POST",
+    url: loginUrl,
+    data: JSON.stringify(data),
+  });
+};
 
 export const userSignup = (data) => {
   return axios({

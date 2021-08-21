@@ -66,12 +66,6 @@ const Register = () => {
     lastName: Yup.string()
       .required("Last name is a required field")
       .matches(/^[a-z ,.'-]+$/i, "Must be alphabetic characters"),
-    username: Yup.string()
-      .required("Username is a required field.")
-      .matches(
-        /^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$/,
-        "Username should be 8 to 30 characters and only contain alphanumeric characters, underscores, dot/periods. Dots and underscores cannot be at the end or start of a username. Underscores and dots must not be side by side or used multiple times in a row."
-      ),
     email: Yup.string()
       .required("Email is a required field")
       .email("Email is invalid"),
@@ -97,17 +91,20 @@ const Register = () => {
 
   const { errors } = formState;
 
-  const onSubmit = (form) => {
-    form.preventDefault();
+  const submitClick = () => {
     const info = {
       ...user,
       username: user.email,
       countryId: 2,
       deviceId: deviceId,
     };
-
+console.log('Click')
     dispatch(signupAsync(info, history));
   };
+
+  const submitClick1 = () => {
+    alert('click')
+  }
 
   const handleInputChange = (e) => {
     const { value, name } = e.target;
@@ -117,17 +114,7 @@ const Register = () => {
     });
   };
 
-  const onSearch = (val) => {
-    console.log("Search term: ", val);
-  };
-
-  const onCountrySelect = (e, val) => {
-    setUser({
-      ...user,
-      countryId: val.key,
-    });
-  };
-
+  
   return (
     <section id="register">
       <div className="container">
@@ -153,7 +140,7 @@ const Register = () => {
               <img src={Exit} alt="exit-cross" className="return-home-right" />
             </Link>
           </div>
-          <form className="signup-form" onSubmit={onSubmit} noValidate>
+          <form className="signup-form" onSubmit={handleSubmit(submitClick)} noValidate >
             <div className="form-btn">
               <Link to="/login">
                 <button type="button" className="signIn-btn">
@@ -263,35 +250,6 @@ const Register = () => {
                 <div className="error">{errors.confirmPassword?.message}</div>
               </div>
             </div>
-
-            {/* <div className="form-input">
-              <div className="form-field">
-                <Select
-                  showSearch
-                  defaultValue="Afghanistan (‫افغانستان‬‎) +93"
-                  style={{ width: "310px" }}
-                  className="form-control"
-                  name="countryId"
-                  onSearch={onSearch}
-                  onChange={(e, val) => onCountrySelect(e, val)}
-                  filterOption={(input, option) =>
-                    option.children
-                      .toLowerCase()
-                      .indexOf(input.toLowerCase()) >= 0
-                  }
-                  placeholder="Select a country"
-                  required
-                >
-                  {/* {countryTelData.allCountries.map((country, i) => {
-                    return (
-                      <Option key={i} value={country.name}>{`${country.name} +${country.dialCode}`}</Option>
-                    )
-                  })} */}
-            {/* <Option>Countries</Option>
-                </Select>
-                <p className="asterisk">*</p>
-              </div>
-            </div>  */}
 
             <div className="checkbox">
               <div className="checkbox-terms-wrapper">

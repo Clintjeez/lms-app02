@@ -52,14 +52,20 @@ export const signupAsync = (data, history) => {
       history.push("/login");
     } catch (error) {
       dispatch(
-        errorAction(error.response?.data?.message) ||
+        errorAction(error.response?.data?.data.message[0]) ||
+         errorAction(error.response.data.message) ||
+         //errorAction(error.response.message) ||
           "An error occured. Please try again"
-      );
+      );  
       dispatch(signupFailure());
-      console.log(error.response?.data?.message);
+      console.log(error)
+      console.log(error.response);
+      //console.log(error.response.message)
+     
     }
   };
 };
+
 
 export const loginAsync = (data, history) => {
   return async (dispatch) => {
@@ -71,9 +77,9 @@ export const loginAsync = (data, history) => {
       dispatch(loginSuccess);
       history.push("dashboard");
     } catch (error) {
-      dispatch(errorAction(error.response.data.message));
+      dispatch(errorAction(error.response?.data?.message));
       dispatch(loginFailure());
-      console.log(error.response.data.message);
+      console.log(error.response?.data?.message);
     }
   };
 };

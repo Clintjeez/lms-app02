@@ -11,13 +11,14 @@ import { useForm } from "react-hook-form";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useDispatch, useSelector } from "react-redux";
+import { VscLoading } from "react-icons/vsc";
 
 import { loginAsync } from "../../redux/action/auth";
 
 // import styles
 import "./FormStyling.scss";
 
-const Login = ({ successAction, errorAction }) => {
+const Login = () => {
   const dispatch = useDispatch();
   const [PasswordInputType, ToggleIcon] = usePasswordToggle();
 
@@ -58,12 +59,11 @@ const Login = ({ successAction, errorAction }) => {
   const { loading } = useSelector((state) => state.auth);
   const history = useHistory();
 
-  const onSubmit = (form) => {
+  const onSubmit = () => {
     const info = {
       ...user,
       deviceId: deviceId,
     };
-    form.preventDefault();
     dispatch(loginAsync(info, history));
   };
 
@@ -84,7 +84,7 @@ const Login = ({ successAction, errorAction }) => {
     <section id="signin">
       <div className="container">
         <main>
-          <form onSubmit={onSubmit}>
+          <form onSubmit={handleSubmit(onSubmit)} noValidate>
             <div className="form-container">
               <div className="form-btn">
                 <Link to="/login">
@@ -108,7 +108,7 @@ const Login = ({ successAction, errorAction }) => {
                     {...register("userName")}
                     type="email"
                     className="form-input"
-                    placeholder="Username"
+                    placeholder="Your email"
                     name="userName"
                     value={user.userName}
                     onChange={(e) => handleInputChange(e)}
@@ -148,7 +148,7 @@ const Login = ({ successAction, errorAction }) => {
                 <label for="remember-details">Remember me?</label>
               </div>
               <button type="submit" className="submit-btn">
-                {loading ? "..." : "Sign In"}
+              {loading ? <VscLoading /> : "Sign in"}
               </button>
               <div className="forgot-password">
                 <p className="forgot-pwd-link">

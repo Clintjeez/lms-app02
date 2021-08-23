@@ -10,13 +10,13 @@ const menuItems = [
   {
     icon: dashboard_icon,
     text: "Dashboard",
-    url: "",
+    url: "home",
     id: 1,
   },
   {
     icon: course_marketplace_icon,
     text: "Course Marketplace",
-    url: "course-market",
+    url: "courses",
     id: 2,
   },
   {

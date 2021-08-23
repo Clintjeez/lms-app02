@@ -1,0 +1,41 @@
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+.account-update{
+    padding: 40px 0px;
+    .profile-avater{
+        width: 120px;
+        height: 120px;
+        background-color: #c2c2c2;
+        border-radius: 50%;
+    }
+
+    .account-form{
+        margin-top: 30px;
+
+        .form-group{
+            margin: 20px 0;
+
+            label{
+                font-size: 20px;
+            }
+
+            .inputs{
+                height: 50px;
+                font-size: 18px;
+            }
+            .btn{
+                height: 50px;
+                color: #ffffff;
+                background-color: #0837e2;
+                border: none;
+                border-radius:7px;
+                padding: 15px;
+            }
+        }
+    }
+
+}

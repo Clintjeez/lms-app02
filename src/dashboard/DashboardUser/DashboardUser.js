@@ -10,22 +10,16 @@ import "./DashboardUser.scss";
 const StudentDashboard = () => {
   return (
     <>
-      <Row>
-        <Col span="6">
+      <div className="dashboard">
+        <aside className="aside-wrapper">
           <SideMenu />
-        </Col>
-        <Col span="18">
-          <Row>
-            <Col span="24">
-              <TopMenu />
-              HELLO
-            </Col>
-            <Col span="">
-              <MainView />
-            </Col>
-          </Row>
-        </Col>
-      </Row>
+        </aside>
+        <main className="main-wrapper">
+        <TopMenu />
+        <MainView />
+        </main>
+        
+      </div>
     </>
   );
 };

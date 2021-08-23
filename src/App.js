@@ -10,7 +10,7 @@ import Pricing from "./landingPage/pages/pricingPage/pricingPage";
 import Teach from "./landingPage/pages/instructorPage/instructorPage";
 import Login from "./authentication/pages/Login";
 import Signup from "./authentication/pages/register";
-import Dashboard from "./dashboard/DashboardUser/DashboardUser";
+import Dashboard from "./dashboard/Dashboard";
 import ForgotPassword from "./authentication/pages/ForgotPassword";
 
 // import styles

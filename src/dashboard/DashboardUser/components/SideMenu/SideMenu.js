@@ -1,9 +1,20 @@
-import { Link } from "react-router-dom";
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  withRouter,
+} from "react-router-dom";
+
 import menuItems from "./menuItems";
 import "./SideMenu.scss";
 import zustech_logo from "../../assets/zustech_logo.png";
 
 const Menu = () => {
+
+
+
   return (
     <div className="sidebar-menu">
       <div className="menu-content">

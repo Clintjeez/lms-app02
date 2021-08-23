@@ -52,11 +52,6 @@ input:focus:required:invalid {
   box-shadow: var(--input-shadow) var(--input-error-shadow);
   border-radius: var(--input-radius);
 }
-input:placeholder-shown {
-  border: var(--input-border) var(--input-error-border);
-  box-shadow: var(--input-shadow) var(--input-error-shadow);
-  border-radius: var(--input-radius);
-}
 
 .form-btn {
   margin-top: 70px;

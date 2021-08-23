@@ -1,9 +1,9 @@
 import axios from "axios";
 import { PROXY } from "../services/urls";
 
-
+console.log("Stating ");
 axios.interceptors.request.use((req) => {
-	const { headers, data, method, url, } = req;
+	const { headers, data, method, url } = req;
 
 	req.url = PROXY;
 

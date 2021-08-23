@@ -52,13 +52,16 @@ export const signupAsync = (data, history) => {
       history.push("/login");
     } catch (error) {
       dispatch(
-        errorAction(error.response.data.message)
-      );
+        errorAction(error.response?.data?.data.message[0]) ||
+         errorAction(error.response.data.message) ||
+         errorAction(error.response.message) ||
+          "An error occured. Please try again"
+      );  
       dispatch(signupFailure());
       console.log(error)
       console.log(error.response);
-      //console.log(error.response.message)
-
+      console.log(error.response.message)
+     
     }
   };
 };

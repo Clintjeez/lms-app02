@@ -1,0 +1,89 @@
+#whyUseZustech {
+  margin: 20px 0px;
+  padding: 30px;
+  background-image: url("./assets/whyBackgroundMobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F8F8F8;
+}
+
+#whyUseZustech p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.06em;
+  color: #03023B;
+}
+
+#whyUseZustech #sectionTitle {
+  text-align: center;
+}
+
+#whyUseZustech #reasons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (25%)[4];
+      grid-template-rows: repeat(4 25%);
+}
+
+#whyUseZustech #reasons img {
+  margin: auto;
+}
+
+#whyUseZustech #reasons p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0px;
+}
+
+#whyUseZustech #reasons div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 1;
+      grid-template-rows: 1;
+}
+
+@media only screen and (min-width: 481px) {
+  #whyUseZustech {
+    background-image: url("./assets/whyBackgroundTablet.png");
+    padding: 5% 15vw;
+  }
+  #whyUseZustech #sectionTitle {
+    text-align: start;
+    margin-left: 4vw;
+  }
+  #whyUseZustech #reasons {
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: (50%)[2];
+        grid-template-rows: repeat(2, 50%);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #whyUseZustech {
+    background-image: url("./assets/whyBackgroundLaptop.png");
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: (50%)[2];
+        grid-template-rows: repeat(2, 50%);
+  }
+  #whyUseZustech p {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+  }
+  #whyUseZustech img {
+    width: 80px;
+  }
+}
+/*# sourceMappingURL=whyUseZustech.css.map */

@@ -1,0 +1,121 @@
+.step-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 480px;
+  position: relative;
+  padding-bottom: 3rem;
+  z-index: 1;
+}
+
+.step-content .mobile-wave {
+  display: none;
+}
+
+.step-content .image img {
+  min-width: 400px;
+  max-width: 500px;
+  max-height: 400px;
+  width: 100%;
+}
+
+.step-content .text-content {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 3rem;
+}
+
+.step-content .text-content h3 {
+  color: #3a86ff;
+  margin-bottom: 2rem;
+}
+
+.step-content .text-content p:last-of-type {
+  margin-top: 10px;
+}
+
+.step-content .text-content p:first-of-type {
+  margin: 0;
+}
+
+.step-content .text-content button {
+  background: #3a86ff;
+  color: white;
+  width: 126px;
+  height: 56px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.step-content .text-content button:first-child {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .step-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .step-content .mobile-wave {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 1200px;
+    height: 560px;
+    pointer-events: none;
+  }
+  .step-content h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 2.5rem auto;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    color: #3a86ff;
+    background: white;
+    -webkit-box-shadow: 0px 2.31795px 2.31795px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2.31795px 2.31795px rgba(0, 0, 0, 0.1);
+  }
+  .step-content .image img {
+    min-width: 300px;
+  }
+  .step-content .text-content {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  .step-content .text-content h3 {
+    margin: 1.25rem 0;
+  }
+  .step-content .text-content button {
+    margin: 40px auto 0 auto;
+  }
+}
+/*# sourceMappingURL=steps.css.map */

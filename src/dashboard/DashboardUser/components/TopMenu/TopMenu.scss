@@ -1,0 +1,23 @@
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+.top-menu{
+  padding: 30px 10px;
+}
+
+.menu-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-title{
+    font-size: 24px;
+    color: #3A86FF;
+}
+.menu-actions{
+    display: flex;
+
+}

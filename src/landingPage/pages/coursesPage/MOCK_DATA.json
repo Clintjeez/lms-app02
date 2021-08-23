@@ -1,0 +1,91 @@
+[
+    {
+        "id":1,
+        "title":"front end development",
+        "difficulty":"hard",
+        "author":"Daphne Mayoral",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, eros ac molestie mattis, eros nunc lacinia velit, eget euismod.",
+        "tags":["Frontend", "UI", "Software"],
+        "link": "./page/categories/front-end-development"
+    },
+    {
+        "id":2,
+        "title":"business analyst",
+        "difficulty":"easy",
+        "author":"Vanya Isaq",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, eros ac molestie mattis, eros nunc lacinia velit, eget euismod.",
+        "tags":["UI", "Frontend"]
+    },
+    
+    {
+        "id":3,
+        "title":"software testing",
+        "difficulty":"easy",
+        "author":"Hubie Ribchester",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, eros ac molestie mattis, eros nunc lacinia velit, eget euismod.",
+        "tags":["UI", "UX"]
+    },
+    
+    {
+        "id":4,
+        "title":"UI UX design",
+        "difficulty":"intermediate",
+        "author":"Marlow Annand",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, eros ac molestie mattis, eros nunc lacinia velit, eget euismod.",
+        "tags":["UX","UI"]
+    },
+    
+    {
+        "id":5,
+        "title":"marketing",
+        "difficulty":"intermediate",
+        "author":"Cirillo Freddi",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, eros ac molestie mattis, eros nunc lacinia velit, eget euismod.",
+        "tags":["Test","Software"]
+    },
+    
+    {
+        "id":6,
+        "title":"back end development",
+        "difficulty":"intermediate",
+        "author":"Daphne Mayoral",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, eros ac molestie mattis, eros nunc lacinia velit, eget euismod.",
+        "tags":["Marketing","IT"]
+    },
+    
+    {
+        "id":7,
+        "title":"test automation",
+        "difficulty":"hard",
+        "author":"Dorie Youles",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, eros ac molestie mattis, eros nunc lacinia velit, eget euismod.",
+        "tags":["Frontend", "IT", "Software"]
+    },
+    
+    {
+        "id":8,
+        "title":"scrum master",
+        "difficulty":"easy",
+        "author":"Virge Anyene",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, eros ac molestie mattis, eros nunc lacinia velit, eget euismod.",
+        "tags":["Data","Backend"]
+    },
+    
+    {
+        "id":9,
+        "title":"UX design theory",
+        "difficulty":"intermediate",
+        "author":"Demott Burl",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, eros ac molestie mattis, eros nunc lacinia velit, eget euismod.",
+        "tags":["Backend"]
+    },
+    
+    {
+        "id":10,
+        "title":"data analyst",
+        "difficulty":"easy",
+        "author":"Ninette Brushfield",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere, eros ac molestie mattis, eros nunc lacinia velit, eget euismod.",
+        "tags":["IT","Software"]
+    }
+]

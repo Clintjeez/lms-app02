@@ -1,0 +1,1261 @@
+:root {
+  --input-border: 1px solid;
+  --input-active-border: $secondaryColor;
+  --input-valid-border: $successColor;
+  --input-error-border: $errorColor;
+  --input-shadow: 0px 0px 0px 4px;
+  --input-active-shadow: rgba(78, 147, 255, 0.2);
+  --input-valid-shadow: rgba(49, 208, 170, 0.2);
+  --input-error-shadow: rgba(237, 104, 104, 0.2);
+  --input-radius: 8px;
+}
+
+.error {
+  margin-top: 0.5rem;
+  color: #eb5757;
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+  text-align: left;
+}
+
+.tc {
+  margin-left: 40px;
+  margin-bottom: 1px;
+}
+
+.form-group .has-error .form-control {
+  border: 1px solid red;
+}
+
+*,
+input::before,
+input::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input:required:focus:enabled {
+  border: var(--input-border) var(--input-active-border);
+  -webkit-box-shadow: var(--input-shadow) var(--input-active-shadow);
+          box-shadow: var(--input-shadow) var(--input-active-shadow);
+  border-radius: var(--input-radius);
+}
+
+input:required:valid {
+  border: var(--input-border) var(--input-valid-border);
+  -webkit-box-shadow: var(--input-shadow) var(--input-valid-shadow);
+          box-shadow: var(--input-shadow) var(--input-valid-shadow);
+  border-radius: var(--input-radius);
+}
+
+input:focus:required:invalid {
+  border: var(--input-border) var(--input-error-border);
+  -webkit-box-shadow: var(--input-shadow) var(--input-error-shadow);
+          box-shadow: var(--input-shadow) var(--input-error-shadow);
+  border-radius: var(--input-radius);
+}
+
+.form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  width: 80%;
+  height: 50px;
+  background: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.form-btn a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+
+#register {
+  background: -webkit-gradient(linear, left top, right top, color-stop(53.3%, #f8f8f8), color-stop(45%, white));
+  background: linear-gradient(to right, #f8f8f8 53.3%, white 45%);
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#register .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 1fr;
+      grid-template-columns: 55% 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#register .exit-to-home-right {
+  position: absolute;
+  right: 40px;
+  font-size: 1rem;
+  z-index: 1;
+  color: black;
+  cursor: pointer;
+  top: 40px;
+}
+
+#register .form-content-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+#register .form-content-right {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#register .signup-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  white-space: nowrap;
+  width: 100%;
+}
+
+#register .signup-text h1 {
+  font-weight: bold;
+  line-height: 75px;
+  letter-spacing: 0.05em;
+  color: #0837e5;
+  margin-bottom: 1.5rem;
+}
+
+#register .signup-text p {
+  color: #828282;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  margin-bottom: 59px;
+}
+
+#register .img-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
+}
+
+#register .img-1 .signup-img {
+  height: auto;
+  width: calc(100% - 50px);
+}
+
+#register .logo-zustech-form {
+  display: none;
+}
+
+#register .signup-text-right {
+  display: none;
+}
+
+#register .signup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 400px;
+}
+
+#register .signUp-btn {
+  height: 47px;
+  float: right;
+  width: 100%;
+  background: white;
+  color: #3a86ff;
+  border: 1px solid #e0e0e0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#register .signUp-btn:hover {
+  background: white;
+  color: #0837e5;
+}
+
+#register .signIn-btn {
+  height: 47px;
+  float: left;
+  width: 100%;
+  border-radius: 6px 0 0 6px;
+  background: #e0e0e0;
+  border: 1px solid #e0e0e0;
+  color: #828282;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#register .signIn-btn:hover {
+  background: #f8f8f8;
+  color: #333;
+}
+
+#register .form-control,
+#register textarea {
+  font-size: 16px;
+}
+
+#register .form-inputs p {
+  color: #eb5757;
+}
+
+#register .top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin-bottom: 1.5rem;
+}
+
+#register .top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#register .top-row > .form-group {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+
+#register .top-row > .form-group:last-child {
+  margin: 0;
+}
+
+#register .top-row .form-control {
+  display: inline-block;
+  padding-left: 10px;
+  height: 48px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+}
+
+#register .form-inputs {
+  position: relative;
+  margin-bottom: 1.5rem;
+  width: 80%;
+}
+
+#register .form-inputs .form-control {
+  display: block;
+  padding: 0 10px;
+  width: 100%;
+  border-radius: 8px;
+  height: 48px;
+  width: 100%;
+  border: 1px solid #bdbdbd;
+}
+
+#register .pwd {
+  position: relative;
+}
+
+#register .pwd .password-toggle-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+#register button:disabled {
+  opacity: 0.3;
+}
+
+#register .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 14px;
+  font-weight: 500;
+  width: 80%;
+}
+
+#register .checkbox label {
+  cursor: pointer;
+}
+
+#register .checkbox .checkbox-terms-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#register .checkbox .checkbox-terms-wrapper a {
+  text-decoration: none;
+  color: #3a86ff;
+}
+
+#register .checkbox .checkbox-mrkt-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+#register input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: #f2f2f2;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  cursor: pointer;
+  margin-right: 15px;
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border-radius: 8px;
+  outline: none;
+}
+
+#register input[type="checkbox"]:after {
+  content: "";
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  border-right: 2.5px solid #fff;
+  border-bottom: 2.5px solid #fff;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotateZ(40deg);
+          transform: translate(-50%, -50%) rotateZ(40deg);
+  display: none;
+}
+
+#register input[type="checkbox"]:hover {
+  background: #46d5b3;
+  border: 1px solid #46d5b3;
+}
+
+#register input[type="checkbox"]:checked {
+  background: #46d5b3;
+  border: none;
+}
+
+#register input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+#register .separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 10px auto;
+}
+
+#register .separator .line {
+  background: gray;
+  border-bottom: 1px solid gray;
+  width: 8em;
+  height: 0px;
+  margin: 10px auto;
+}
+
+#register .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+
+#register .form-input-btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  padding: 15px 41px;
+  background: #3a86ff;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#register .form-input-btn:hover {
+  background: #0837e5;
+  color: #f2f2f2;
+}
+
+#register .social-media-icons {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  margin: 0;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.logo-zustech-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px 5px 10px;
+  border-radius: 112px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  #register {
+    background: #f8f8f8;
+    overflow: visible;
+    height: 100vh;
+  }
+  #register .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    background: #f8f8f8;
+    height: 100vh;
+  }
+  #register .reg-btn-wrapper {
+    margin: 140px 0 40px 0;
+  }
+  #register .form-content-left {
+    display: none;
+  }
+  #register .form-content-right {
+    background: #f8f8f8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  #register .signup-text-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    white-space: nowrap;
+  }
+  #register .signup-text-right h1 {
+    max-width: 400px;
+    font-weight: bold;
+    font-size: 2.37em;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #0837e5;
+    margin-bottom: 2rem;
+  }
+  #register .signup-text-right p {
+    color: #828282;
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+  #register .signup-form {
+    max-width: 400px;
+    min-width: 300px;
+    margin-bottom: 0;
+    top: 40%;
+  }
+  #register .form-btn {
+    margin: 2.5rem 0 2.5rem 0;
+  }
+}
+
+@media (min-width: 813px) and (max-width: 1260px) {
+  #register .reg-btn-wrapper {
+    margin: 60px 0 40px 0;
+  }
+}
+
+@media (max-width: 812px) {
+  #register {
+    height: 100%;
+  }
+  #register .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  #register .return-home-right {
+    display: none;
+  }
+  #register .signup-form {
+    max-width: 80%;
+    max-width: 400px;
+  }
+  #register .form-content-left {
+    display: none;
+  }
+  #register .form-btn {
+    margin: 2rem 0 2rem 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #register {
+    background: white;
+  }
+  #register .container {
+    background: white;
+  }
+  #register .container .form-content-right {
+    background: white;
+  }
+  #register .container .form-content-right .logo-zustech-form {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 812px) {
+  #register {
+    height: 100%;
+  }
+  #register .container .form-content-right {
+    height: 100%;
+  }
+  #register .container .form-content-right .signup-form .form-btn {
+    margin: 2rem 0;
+  }
+}
+
+/*for mobile screen devices 375px and 480px */
+#signin {
+  width: 100%;
+  margin-top: 0;
+  position: relative;
+}
+
+#signin .welcome-message {
+  display: none;
+}
+
+#signin main {
+  width: 100%;
+  height: 100vh;
+}
+
+#signin .form-container {
+  max-width: 400px;
+  width: 100%;
+}
+
+#signin .form-container .form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem auto;
+  width: 80%;
+  height: 50px;
+  background: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+#signin .form-container .form-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+}
+
+#signin .form-container .signIn-btn {
+  height: 47px;
+  float: right;
+  width: 100%;
+  background-color: white;
+  color: #3a86ff;
+  border: 1px solid #e0e0e0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#signin .form-container .signIn-btn:hover {
+  background: white;
+  color: #0837e5;
+}
+
+#signin .form-container .signUp-btn {
+  height: 47px;
+  float: left;
+  width: 100%;
+  border-radius: 6px 0 0 6px;
+  background: #e0e0e0;
+  border: 1px solid #e0e0e0;
+  color: #828282;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#signin .form-container .signUp-btn:hover {
+  background: #f8f8f8;
+  color: #333;
+}
+
+#signin .logo-zustech-form {
+  display: none;
+}
+
+#signin form .header {
+  margin-bottom: 30px;
+}
+
+#signin form .header h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #0837e5;
+}
+
+#signin form .header p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #828282;
+}
+
+#signin form {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#signin .form-control {
+  margin: 0px auto;
+  margin-bottom: 1.5rem;
+  width: 80%;
+}
+
+#signin .form-control input {
+  display: inline-block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 8px;
+  height: 48px;
+  width: 100%;
+  border: 1px solid #bdbdbd;
+}
+
+#signin .form-control p {
+  color: red;
+  font-style: italic;
+  text-align: right;
+  font-size: 10px;
+  margin: 1px 30px 0 0;
+}
+
+#signin form .submit-btn {
+  background: #3a86ff;
+  border: 2px solid #3a86ff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  display: block;
+  width: 128px;
+  border-radius: 6px;
+  margin: 30px auto;
+  padding: 12px 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#signin .forgot-password {
+  margin: 1rem 0;
+}
+
+#signin .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  margin-left: 19px;
+  font-weight: 500;
+  position: relative;
+}
+
+#signin .checkbox label {
+  cursor: pointer;
+}
+
+#signin .checkbox .remember-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#signin input[type="checkbox"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #ecf1f4;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-left: 20px;
+  height: 24px;
+  width: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border-radius: 8px;
+  outline: none;
+}
+
+#signin input[type="checkbox"]:hover {
+  background-color: #46d5b3;
+}
+
+#signin .submit-btn:hover {
+  background-color: blue;
+}
+
+#signin input[type="checkbox"]:checked {
+  background-color: #46d5b3;
+}
+
+#signin input[type="checkbox"]:checked:after {
+  display: block;
+}
+
+#signin .separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-aroun;
+      -ms-flex-pack: space-aroun;
+          justify-content: space-aroun;
+  width: 80%;
+  margin: 15px auto;
+}
+
+#signin .separator .line {
+  background-color: gray;
+  border: 1px solid gray;
+  width: 7em;
+  height: 0px;
+  margin: 10px auto;
+}
+
+#signin .forgot-pwd-link a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.06em;
+  color: #3a86ff;
+  font-weight: 500;
+  line-height: 140%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#signin .social-media p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.06em;
+  color: #03023b;
+  text-align: center;
+}
+
+#signin .social-media img {
+  width: 13%;
+  margin: 20px;
+}
+
+.form-control .psd {
+  position: relative;
+}
+
+.form-control .psd img {
+  position: absolute;
+  top: 11px;
+  padding: 8px;
+  right: 3px;
+  min-height: 29px;
+  max-width: 36px;
+}
+
+/*for ipad and tablet mobile devices*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #signin main {
+    width: 100%;
+  }
+  #signin main form .form-btn {
+    width: 270px;
+  }
+  #signin .separator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    margin: 10px auto;
+  }
+  #signin .separator .line {
+    background-color: gray;
+    border: 1px solid gray;
+    width: 7em;
+    height: 0px;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 899px) {
+  #signin {
+    width: 100%;
+  }
+  #signin main form .form-btn {
+    width: 290px;
+  }
+  #signin .separator {
+    width: 60%;
+  }
+}
+
+/*for desktop and bigger laptop screens*/
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  #signin {
+    width: 100%;
+    background: -webkit-gradient(linear, right top, left top, color-stop(53.3%, #f8f8f8), color-stop(45%, white));
+    background: linear-gradient(to left, #f8f8f8 53.3%, white 45%);
+  }
+  #signin .welcome-message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #f8f8f8;
+  }
+  #signin .welcome-message .exit-to-home-right {
+    position: absolute;
+    right: 40px;
+    font-size: 1rem;
+    z-index: 1;
+    color: black;
+    cursor: pointer;
+    top: 40px;
+  }
+  #signin .welcome-message .welcome-container {
+    padding-left: 2rem;
+  }
+  #signin .welcome-message h1 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: #0837e5;
+    margin-bottom: 1.5rem;
+  }
+  #signin .welcome-message p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #828282;
+    position: relative;
+    margin-bottom: 3rem;
+    left: 10px;
+  }
+  #signin .welcome-message img {
+    width: 100%;
+    height: auto;
+    max-width: 524px;
+  }
+  #signin form .header {
+    display: none;
+  }
+  #signin main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0;
+  }
+  #signin form {
+    width: 82%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #signin main form .form-container .form-btn {
+    margin-bottom: 50px;
+  }
+  #signin form .social-media p {
+    display: block;
+  }
+  #signin .separator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+  }
+  #signin .separator .line {
+    background-color: gray;
+    border: 1px solid gray;
+    width: 7.3em;
+    height: 0px;
+    margin: 10px auto;
+  }
+}
+
+/*for desktop and bigger laptop screens*/
+@media screen and (min-width: 1201px) {
+  #signin {
+    width: 100%;
+    background: -webkit-gradient(linear, right top, left top, color-stop(53.3%, #f8f8f8), color-stop(45%, white));
+    background: linear-gradient(to left, #f8f8f8 53.3%, white 45%);
+  }
+  #signin .welcome-message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    width: 100%;
+    background: #f8f8f8;
+  }
+  #signin .welcome-message .exit-to-home-right {
+    position: absolute;
+    right: 40px;
+    font-size: 1rem;
+    z-index: 1;
+    color: black;
+    cursor: pointer;
+    top: 40px;
+  }
+  #signin .welcome-message h1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    line-height: 75px;
+    letter-spacing: 0.05em;
+    color: #0837e5;
+    margin-bottom: 1.5rem;
+  }
+  #signin .welcome-message p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #828282;
+    position: relative;
+    margin-bottom: 3rem;
+    left: 10px;
+  }
+  #signin .welcome-message img {
+    height: auto;
+    max-width: 524px;
+    width: 100%;
+  }
+  #signin form .header {
+    display: none;
+  }
+  #signin main {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0;
+  }
+  #signin form {
+    width: 82%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #signin main form .form-container .form-btn {
+    margin-bottom: 50px;
+  }
+  #signin form .social-media p {
+    display: block;
+  }
+  #signin .separator {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 10px auto;
+  }
+  #signin .separator .line {
+    background-color: gray;
+    border: 1px solid gray;
+    width: 7.3em;
+    height: 0px;
+    margin: 10px auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  #signin {
+    background: #f8f8f8;
+  }
+  #signin .logo-zustech-form {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 899px) and (max-height: 676px) {
+  #signin {
+    height: 100%;
+  }
+  #signin main {
+    height: 100%;
+  }
+}
+
+@media screen and (max-height: 676px) {
+  #signin {
+    height: 100%;
+  }
+  #signin main {
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=FormStyling.css.map */

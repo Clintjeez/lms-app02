@@ -1,0 +1,66 @@
+// Nav Buttons
+.btn-primary {
+  font-family: $font-robotto;
+  font-weight: 500;
+  background: $primaryColor;
+  border: 2px solid $primaryColor;
+  color: $offWhite;
+  border-radius: $normal-radius;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  font-family: $font-robotto;
+  font-weight: 500;
+  background: transparent;
+  border: 2px solid $primaryColor;
+  color: $primaryColor;
+  border-radius: $normal-radius;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+// Input Field universal styling
+
+:root {
+  --input-border: 1px solid;
+  --input-active-border:  #3A86FF;
+  --input-valid-border:  #31d0aa;
+  --input-error-border:  #ed6868;
+  --input-shadow: 0px 0px 0px 4px;
+  --input-active-shadow: rgba(78, 147, 255, 0.2);
+  --input-valid-shadow: rgba(49, 208, 170, 0.2);
+  --input-error-shadow: rgba(237, 104, 104, 0.2);
+  --input-radius: 8px;
+}
+
+*,
+input::before,
+input::after {
+  box-sizing: border-box;
+}
+input{
+  border: none;
+  box-shadow: none;
+  border-radius: 2px;
+}
+
+input:required:focus:enabled{
+  border: var(--input-border) var(--input-active-border);
+  box-shadow: var(--input-shadow) var(--input-active-shadow);
+  border-radius: var(--input-radius);
+}
+
+input:required:valid{
+  border: var(--input-border) var(--input-valid-border);
+  box-shadow: var(--input-shadow) var(--input-valid-shadow);
+  border-radius: var(--input-radius);
+}
+
+
+input:focus:required:invalid{
+  border: var(--input-border) var(--input-error-border);
+  box-shadow: var(--input-shadow) var(--input-error-shadow);
+  border-radius: var(--input-radius);
+}

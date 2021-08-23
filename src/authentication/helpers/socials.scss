@@ -1,0 +1,16 @@
+.social-media {
+  p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #03023b;
+    text-align: center;
+  }
+  img {
+    max-width: 56px;
+    margin: 20px;
+    @media screen and (max-width: 347px) {
+      max-width: 48px;
+      margin: 1rem;
+    }
+  }
+}

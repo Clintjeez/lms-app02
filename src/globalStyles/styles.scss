@@ -1,0 +1,177 @@
+// /* Colours */
+// :root,
+// [data-theme="default"] {
+//   /* Primary Blue and Opacity Reductions */
+//   --blue: hsl(227, 93%, 46%);
+//   --blue-75: hsla(227, 93%, 46%, 0.75);
+//   --blue-50: hsla(227, 93%, 46%, 0.5);
+//   --blue-25: hsla(227, 93%, 46%, 0.25);
+//   /* Lighter Blue and Opacity Reductions */
+//   --light-blue: hsl(217, 100%, 61%);
+//   --light-blue-75: hsla(217, 100%, 61%, 0.75);
+//   --light-blue-50: hsla(217, 100%, 61%, 0.5);
+//   --light-blue-25: hsla(217, 100%, 61%, 0.25);
+//   /* Yellow and Opacity Reductions */
+//   --yellow: hsl(48, 100%, 50%);
+//   --yellow-75: hsla(48, 100%, 50%, 0.75);
+//   --yellow-50: hsla(48, 100%, 50%, 0.5);
+//   --yellow-25: hsla(48, 100%, 50%, 0.25);
+//   /* Dark Blue / Text */
+//   --dark-blue: hsl(241, 93%, 12%);
+//   /* Success / Green */
+//   --evergreen: hsl(166, 63%, 50%);
+//   --evergreen-75: hsla(166, 63%, 50%, 0.75);
+//   --evergreen-50: hsla(166, 63%, 50%, 0.5);
+//   --evergreen-25: hsla(166, 63%, 50%, 0.25);
+//   /* Invalid / Red */
+//   --red: hsl(0, 79%, 63%);
+//   --red-75: hsla(0, 79%, 63%, 0.75);
+//   --red-50: hsla(0, 79%, 63%, 0.5);
+//   --red-25: hsla(0, 79%, 63%, 0.25);
+//   /* Light Slate */
+//   --light-slate: hsl(240, 10%, 59%);
+//   /* Dorian */
+//   --dorian: hsl(206, 28%, 94%);
+//   /* Cloud */
+//   --cloud: hsl(206, 67%, 99%);
+//   --white: white;
+// }
+
+// :root {
+//   // Typeface
+//   --roboto: "Roboto", sans-serif;
+//   --nunito: "Nunito", sans-serif;
+//   // Border Radius
+//   --normal-radius: 8px;
+//   --larger-radius: 12px;
+//   // Drop Shadow
+// }
+
+// * {
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: border-box;
+// }
+
+// body {
+//   font-family: var(--roboto);
+//   font-size: 1em;
+//   background: var(--cloud);
+//   color: var(--dark-blue);
+//   overflow-x: hidden;
+// }
+
+// h1,
+// h2,
+// h3 {
+//   font-weight: 700;
+// }
+
+// // Desktop Font Sizes
+// h1 {
+//   font-size: 4rem;
+//   letter-spacing: 5%;
+// }
+// h2 {
+//   font-size: 2.5rem;
+//   text-transform: capitalize;
+//   letter-spacing: 3%;
+// }
+// h3 {
+//   font-size: 1.5rem;
+//   text-transform: capitalize;
+// }
+// h4 {
+//   font-size: 1.125rem;
+// }
+
+// h3,
+// h4 {
+//   letter-spacing: 2%;
+// }
+
+// p {
+//   line-height: 140%;
+//   color: var(--dark-blue);
+//   font-size: 1rem;
+//   letter-spacing: 6%;
+// }
+
+// .link {
+//   font-weight: 700;
+//   letter-spacing: 6%;
+//   text-decoration: underline;
+//   color: var(--light-blue);
+// }
+
+// .pre-title {
+//   font-size: 0.75rem;
+//   font-weight: 700;
+//   letter-spacing: 35.5%;
+//   text-transform: uppercase;
+// }
+
+// .small-text {
+//   font-size: 0.875rem;
+//   font-weight: 700;
+// }
+
+// // Tablet Font Sizes
+// @media screen and (max-width: 1023px) {
+//   h1 {
+//     font-size: 2.5rem;
+//   }
+//   h2 {
+//     font-size: 2.125rem;
+//   }
+//   h3 {
+//     font-size: 1.5rem;
+//   }
+// }
+
+// // Mobile Font Sizes
+// @media screen and (max-width: 767px) {
+//   h2 {
+//     font-size: 1.5rem;
+//   }
+//   h3 {
+//     font-size: 1.125rem;
+//   }
+// }
+
+// /* Handles basic responsiveness */
+// @media screen and (max-width: 1200px) {
+//   .container {
+//     padding-left: 30px;
+//     padding-right: 30px;
+//   }
+// }
+
+// .container {
+//   max-width: 1220px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// // Buttons
+// .btn-primary {
+//   font-family: var(--roboto);
+//   font-weight: 500;
+//   background: var(--blue);
+//   border: 2px solid var(--blue);
+//   color: var(--white);
+//   border-radius: var(--normal-radius);
+//   padding: 12px 24px;
+//   cursor: pointer;
+// }
+
+// .btn-secondary {
+//   font-family: var(--roboto);
+//   font-weight: 500;
+//   background: transparent;
+//   border: 2px solid var(--blue);
+//   color: var(--blue);
+//   border-radius: var(--normal-radius);
+//   padding: 12px 24px;
+//   cursor: pointer;
+// }

@@ -1,0 +1,378 @@
+#SubPageHero {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30px 1fr 30px;
+      grid-template-columns: 30px 1fr 30px;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+}
+
+#SubPageHero #section-1 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+#SubPageHero #path {
+  display: none;
+}
+
+#SubPageHero #path a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.06em;
+  color: #4F4F4F;
+}
+
+#SubPageHero .courseInfo {
+  margin: auto;
+}
+
+#SubPageHero .courseInfo h1 {
+  color: #03023B;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+}
+
+#SubPageHero .courseRating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#SubPageHero .courseRating .rating-value {
+  color: #46D5B3;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+}
+
+#SubPageHero .courseRating .stars {
+  margin: 0px 10px;
+}
+
+#SubPageHero .courseRating .rating-count {
+  letter-spacing: 0.06em;
+}
+
+#SubPageHero #courseDescription {
+  color: #03023B;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+}
+
+#SubPageHero #HeroImage {
+  width: 306px;
+  height: 211px;
+  border-radius: 10px;
+  margin: auto;
+  background-image: url("./assets/hero-bg.png");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#SubPageHero #previewButton {
+  background-color: white;
+  padding: 14px 27px;
+  border-radius: 50px;
+  width: 170px;
+  height: 48px;
+  -webkit-box-shadow: inset 0px -1.125px 0.5625px rgba(14, 14, 44, 0.4);
+          box-shadow: inset 0px -1.125px 0.5625px rgba(14, 14, 44, 0.4);
+  color: #03023B;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+#SubPageHero .courseStats {
+  margin: 10px 0px;
+  padding: 10px;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  grid-column: span 3;
+  background-color: #F2F2F2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+}
+
+#SubPageHero .courseStats h3 {
+  color: #03023B;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+}
+
+#SubPageHero .courseStats p {
+  color: #4F4F4F;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+#SubPageHero #courseDifficulty {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
+}
+
+#SubPageHero #courseDifficulty img {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin: auto;
+  width: 20px;
+}
+
+#SubPageHero #courseDifficulty p {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin: auto;
+}
+
+#SubPageHero #studentEnrolled {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
+}
+
+#SubPageHero #studentEnrolled h3 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin: auto;
+}
+
+#SubPageHero #studentEnrolled p {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin: auto;
+}
+
+#SubPageHero #numProjects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
+}
+
+#SubPageHero #numProjects h3 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin: auto;
+}
+
+#SubPageHero #numProjects p {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin: auto;
+}
+
+#SubPageHero #hoursOfContent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
+}
+
+#SubPageHero #hoursOfContent h3 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin: auto;
+}
+
+#SubPageHero #hoursOfContent p {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin: auto;
+}
+
+#SubPageHero .trialStart {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #3A86FF;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 13.5px 27px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+#SubPageHero #courseTrialOne p, #SubPageHero #courseTrialTwo p {
+  color: #828282;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  margin: 10px 60px;
+}
+
+#SubPageHero #courseTrialOne {
+  display: none;
+}
+
+#SubPageHero #courseTrialTwo {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+@media only screen and (min-width: 481px) {
+  #SubPageHero {
+    -ms-grid-columns: 4vw 1fr 4vw;
+        grid-template-columns: 4vw 1fr 4vw;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+  }
+  #SubPageHero #section-1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: 2fr;
+        grid-template-rows: 2fr;
+  }
+  #SubPageHero .courseInfo {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    padding-right: 1vw;
+  }
+  #SubPageHero .courseStats {
+    margin: auto;
+    width: 546px;
+    height: 101px;
+    border-radius: 10px;
+    position: relative;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    /* Card shadow*/
+    -webkit-box-shadow: 0px 4.32px 4.32px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4.32px 4.32px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  #SubPageHero #HeroImage {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+    max-width: 374.64px;
+    max-height: 252px;
+    margin: 0px auto;
+  }
+  #SubPageHero #courseTrialOne {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    margin: 40px auto;
+  }
+  #SubPageHero #courseTrialOne p {
+    margin: 0px;
+    padding: 10px;
+  }
+  #SubPageHero #courseTrialTwo {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #SubPageHero {
+    -ms-grid-rows: 40px 2fr 120px;
+        grid-template-rows: 40px 2fr 120px;
+  }
+  #SubPageHero #path {
+    display: block;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  #SubPageHero #section-1 {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #SubPageHero #courseTrialOne p {
+    font-size: 14px;
+    line-height: 140%;
+  }
+  #SubPageHero #HeroImage {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 382px;
+    margin: 0px auto;
+  }
+  #SubPageHero .courseInfo h1 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+  }
+  #SubPageHero #courseDifficulty img {
+    width: 44px;
+  }
+  #SubPageHero .courseStats {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    width: 100%;
+    max-width: 888px;
+  }
+  #SubPageHero .courseStats h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  #SubPageHero .courseStats p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #SubPageHero {
+    -ms-grid-columns: 15vw 2fr 15vw;
+        grid-template-columns: 15vw 2fr 15vw;
+  }
+}
+/*# sourceMappingURL=subPageHero.css.map */

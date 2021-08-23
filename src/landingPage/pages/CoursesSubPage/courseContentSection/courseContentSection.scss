@@ -1,0 +1,86 @@
+
+
+#CourseContentSection {
+    margin: 20px;
+    .ant-collapse-header, #CourseContentSectionTitle p{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 130%;
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.06em;
+        color: #03023B;
+    }
+    #CourseContentSectionTitle {
+        p{
+            justify-content: center;
+        }
+    }
+
+    #viewAll {
+        margin-top: 20px;         
+        display: flex;
+        justify-content: center;   
+        align-items: center;
+        button {
+            margin: auto;
+            background: #3A86FF;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            height: 48px;
+            width: 100%;
+        }
+    }
+}
+
+
+//min-width: 481px:
+@media only screen and (min-width: 481px) {
+    #CourseContentSection {
+        margin: 60px 80px;
+        
+        #CourseContentSectionTitle {
+            p{
+                justify-content: start;
+            }
+        }
+
+    }
+
+}
+
+//min-width: 769px:
+@media only screen and (min-width: 769px) {
+    #CourseContentSection {
+        margin: 60px 15vw;
+        
+        .ant-collapse-header, #CourseContentSectionTitle p{
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        #CourseContentSectionTitle {
+            p{
+                justify-content: start;
+            }
+        }
+
+    }
+
+}
+
+
+//min-width: 1024px:
+@media only screen and (min-width: 1024px) {
+
+}

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+#cta-section {
+  background: #3a86ff;
+  height: 393px;
+}
+
+#cta-section .container {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#cta-section .container .heading {
+  color: #fdfdfd;
+  padding-bottom: 30px;
+}
+
+#cta-section .container .info {
+  color: #fdfdfd;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+#cta-section .container .cta-trial-btn {
+  width: 230px;
+  height: 70px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.045em;
+  cursor: pointer;
+  color: #f8f8f8;
+  background-color: #3a86ff;
+  border: 2px solid #f8f8f8;
+}
+
+@media only screen and (max-width: 884px) {
+  #cta-section .container .heading {
+    padding-bottom: 20px;
+  }
+  #cta-section .container .info {
+    padding-bottom: 5px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  #cta-section .container .btn-wrapper {
+    padding-bottom: 20px;
+  }
+  #cta-section .container .btn-wrapper .cta-trial-btn {
+    width: 180px;
+    height: 60px;
+    margin-top: 25px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #cta-section .container .heading {
+    padding-top: 20px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #cta-section .container .info {
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #cta-section .container .btn-wrapper {
+    padding-bottom: 20px;
+  }
+  #cta-section .container .btn-wrapper .cta-trial-btn {
+    width: 130px;
+    height: 50px;
+    margin-top: 15px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  #cta-section .container .heading {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  #cta-section .container .info {
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #cta-section .container .btn-wrapper {
+    padding-bottom: 20px;
+  }
+  #cta-section .container .btn-wrapper .cta-trial-btn {
+    width: 130px;
+    height: 50px;
+    margin-top: 15px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #cta-section .container .heading {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  #cta-section .container .info {
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #cta-section .container .btn-wrapper {
+    padding-bottom: 20px;
+  }
+  #cta-section .container .btn-wrapper .cta-trial-btn {
+    width: 130px;
+    height: 50px;
+    margin-top: 15px;
+    line-height: 20px;
+  }
+}
+/*# sourceMappingURL=Cta.css.map */

@@ -1,0 +1,185 @@
+@import "../../globalStyles/helpers/variables";
+
+// Mobile (Mobile First)
+nav.shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.4s ease;
+  animation: smoothScroll 1s forwards;
+  background: white;
+  box-shadow: none;
+  z-index: 3;
+  .nav-center {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 90px;
+    transition: height 0.25s ease;
+    background: white;
+    .nav-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 90px;
+      padding: 0 30px;
+    }
+    .links-container {
+      height: 0;
+      overflow: hidden;
+      .links:first-child {
+        margin-top: 2em;
+      }
+      .links a {
+        opacity: 0;
+        color: $darkColor;
+        font-size: 24px;
+        text-transform: capitalize;
+        text-decoration: none;
+        display: block;
+        padding: 30px;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+    .nav-btns {
+      display: flex;
+      visibility: hidden;
+      opacity: 0;
+      padding: 30px;
+      font-size: 24px;
+      button {
+        font-size: 24px;
+        padding: 7px 20px;
+      }
+    }
+  }
+  .nav-center.menu-open {
+    height: 100vh;
+    .links-container {
+      height: 70%;
+      .links a {
+        opacity: 1;
+        transition: opacity 1s ease;
+      }
+    }
+    .nav-btns {
+      visibility: visible;
+      opacity: 1;
+      justify-content: space-between;
+      transition: opacity 1.1s ease;
+    }
+  }
+}
+
+// Mobile Landscape
+@media screen and (max-height: 568px) {
+  nav .nav-center .links-container .links:first-child {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-height: 414px) {
+  nav .nav-center .links-container .links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+// Tablet/Desktop Menu
+@media screen and (min-width: 768px) {
+  nav {
+    .nav-center {
+      flex-direction: row;
+      max-width: 1220px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      box-shadow: none;
+      .nav-header {
+        box-shadow: none;
+        padding: 0;
+        .hamburger-react {
+          display: none;
+        }
+      }
+      .links-container {
+        flex: 1;
+        margin: 0 1rem;
+        height: auto !important;
+        .links:first-child {
+          margin-top: 0;
+        }
+        .links {
+          display: flex;
+          justify-content: space-evenly;
+          list-style-type: none;
+          a {
+            opacity: 1;
+            font-size: 16px;
+            padding: 0;
+            &:hover {
+              padding: 0;
+              background: transparent;
+            }
+          }
+        }
+      }
+      .nav-btns {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        margin-bottom: 0;
+        padding: 0;
+        button {
+          font-size: 16px;
+          padding: 8px 16px;
+          &:first-child {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+    .nav-center.menu-open {
+      height: auto;
+    }
+  }
+}
+
+// Increase font size for desktop & large tablets
+@media screen and (min-width: 1024px) {
+  nav {
+    .nav-center {
+      .links-container .links a {
+        font-size: 18px;
+      }
+      .nav-btns {
+        button {
+          font-size: 18px;
+          padding: 12px 24px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-142px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

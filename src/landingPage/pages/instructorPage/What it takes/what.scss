@@ -1,0 +1,107 @@
+@import "../../../../globalStyles/helpers/variables";
+
+#what {
+  background: $lightGrey;
+  .container {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    h2 {
+      color: $secondaryColor;
+      text-align: center;
+      padding-bottom: 3rem;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      .images {
+        position: relative;
+        margin-right: 3rem;
+        z-index: 0;
+        @media screen and (min-width: 1200px) {
+          margin-right: 5rem;
+        }
+        .main-img {
+          min-width: 300px;
+          max-width: 500px;
+          width: 40vw;
+          border-radius: $normal-radius;
+        }
+        .elipse-graphic {
+          position: absolute;
+          height: auto;
+          &.e1 {
+            right: -45px;
+            top: -50px;
+            z-index: -1;
+            max-width: 162px;
+            @media screen and (max-width: 1024px) {
+              max-width: 112px;
+            }
+            @media screen and (min-width: 480px) and (max-width: 768px) {
+              max-width: 132px;
+            }
+          }
+          &.e2 {
+            left: -75px;
+            bottom: -50px;
+            z-index: -1;
+            max-width: 196px;
+            @media screen and (max-width: 1024px) {
+              max-width: 142px;
+            }
+            @media screen and (min-width: 480px) and (max-width: 768px) {
+              max-width: 162px;
+            }
+          }
+        }
+      }
+      .text-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .item {
+          margin: 1rem 0;
+          h3 {
+            margin-bottom: 1rem;
+            color: $secondaryColor;
+          }
+          ul li {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #what {
+    .container {
+      padding-bottom: 3rem;
+      h2 {
+        padding-bottom: 2rem;
+      }
+      .content {
+        flex-direction: column;
+        .images {
+          margin-right: 0;
+          margin-bottom: 2rem;
+          .main-img {
+            width: 100%;
+          }
+        }
+        .text-content {
+          .item {
+            text-align: center;
+            h3 {
+            }
+            ul li {
+            }
+          }
+        }
+      }
+    }
+  }
+}

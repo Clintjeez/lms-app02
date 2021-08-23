@@ -1,0 +1,330 @@
+@import "../../../../globalStyles/helpers/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+#pricing {
+  background: $lightGrey;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  body {
+    place-items: center;
+    height: 100vh;
+  }
+
+  .left-price {
+    color: $grey1;
+  }
+  .btn-left {
+    border: 1.67364px solid $darkColor;
+    color: $darkColor;
+  }
+  .center-price {
+    color: $successColor;
+  }
+  #statement {
+    visibility: show;
+  }
+  #hidden-statement {
+    visibility: hidden;
+  }
+  .pricing-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 90vw;
+  }
+  .content {
+    align-items: center;
+  }
+  .pricing-container h2 {
+    color: $secondaryColor;
+  }
+  .title {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+  }
+  .subtext {
+    padding-top: 12px;
+    font-weight: normal;
+    font-size: $body;
+    line-height: 26px;
+    letter-spacing: 0.06em;
+  }
+  .header {
+    text-align: center;
+    width: auto;
+    padding-top: 20px;
+    max-width: 750px;
+  }
+
+  #statement {
+    padding-top: 32px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: $grey4;
+    text-align: center;
+    letter-spacing: 0.355em;
+    text-transform: uppercase;
+  }
+  #hide-statement {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: $grey5;
+    text-align: center;
+    letter-spacing: 0.355em;
+    text-transform: capitalize;
+    visibility: show;
+  }
+  .left-statement {
+    visibility: hidden;
+  }
+  .subscription-type {
+    font-size: $mediumHeadings;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $grey3; //change to variable value new
+  }
+  .price {
+    color: $primaryColor;
+    font-size: 42px;
+  }
+  .left-price {
+    color: $grey1; // grey 4
+  }
+  .center-price {
+    color: $successColor;
+  }
+
+  .pricing-cards {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .single-card {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    border-radius: $large-radius;
+    background: #ffffff;
+    max-width: 450px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0px -8px 0px 0px $successColor, 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .left {
+    box-shadow: 0px -8px 0px 0px $darkColor, 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .right {
+    box-shadow: 0px -8px 0px 0px $primaryColor, 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .top-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: $large-radius $large-radius 0 0;
+    letter-spacing: 0.03em;
+  }
+
+  .features {
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    padding-left: 35px;
+    justify-content: center;
+    list-style-type: none;
+    padding-top: 60px;
+  }
+  .feature {
+    text-align: left;
+    font-size: $body;
+    line-height: 26px;
+    letter-spacing: 0.06em;
+    padding-left: 40px;
+    padding-bottom: 36px;
+
+    background: url(./assets/tick-blue.png) no-repeat;
+  }
+  .center-feature {
+    background: url(./assets/tick-green.png) no-repeat;
+  }
+  .left-feature {
+    background: url(./assets/tick-darkblue.png) no-repeat;
+  }
+
+  .btn-subscribe {
+    justify-self: center;
+    font-size: $smallHeadings;
+    line-height: 24px;
+    letter-spacing: 0.045em;
+    color: $primaryColor;
+    background: none;
+    width: 200px;
+    height: 66.11px;
+    border: 1.67364px solid $primaryColor;
+    box-sizing: border-box;
+    border-radius: $normal-radius;
+    margin-top: 30px;
+    font-weight: 500;
+  }
+  .btn-left {
+    border: 1.67364px solid $darkColor;
+    color: $darkColor;
+  }
+  .center-fixed {
+    font-weight: 500;
+    font-size: $mediumHeadings;
+    line-height: 28px;
+    letter-spacing: 0.045em;
+    color: #ffffff;
+    background: $successColor;
+    border: none;
+    border-radius: $normal-radius;
+  }
+  #frequency {
+    color: $grey5;
+  }
+  @media only screen and (min-width: 756px) and (max-width: 1024px) {
+    #frequency {
+      font-size: $largeHeadings;
+    }
+    .header {
+      text-align: center;
+      max-width: 70%;
+      margin: 0 auto;
+    }
+    .pricing-cards {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50% 50%;
+      place-items: center;
+      text-align: center;
+    }
+    .single-card {
+      display: grid;
+      grid-template-rows: 20% 60% 20%;
+      border-radius: $large-radius;
+      background: #ffffff;
+      max-width: none;
+    }
+    .left {
+      margin-right: 10px;
+    }
+    .center {
+      padding-top: 10px;
+    }
+    .subscription-type {
+      color: $grey2;
+    }
+    .title {
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 75px;
+      letter-spacing: 0.05em;
+    }
+    .wave-bg {
+      background: url(./assets/wave-mobile.svg) no-repeat;
+      background-position: bottom;
+      color: $grey2;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .header {
+      max-width: 1440px;
+    }
+
+    .pricing-cards {
+      display: flex;
+      justify-content: space-between;
+    }
+    .feature {
+      font-size: $smallHeadings;
+    }
+    .left {
+      margin-right: 10px;
+    }
+    .single-card {
+      height: 552.5px;
+      width: 305px;
+    }
+    .center {
+      height: 638px;
+      width: 351.15px;
+      margin-right: 10px;
+    }
+    .center-feature {
+      width: 90%;
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    padding-top: 30px;
+    .wave-bg {
+      background: url(./assets/wave-1200.svg) no-repeat;
+      background-position: bottom;
+    }
+    .center-features {
+      margin-top: 40px;
+    }
+    .title {
+      font-size: 64px;
+    }
+
+    .header {
+      max-width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .subtext {
+      font-size: $smallHeadings;
+      padding-top: 30px;
+    }
+    .center-features {
+      transform: translate(0px, -20px);
+    }
+    .single-card {
+      height: 663px;
+      width: 374px;
+    }
+    #statement {
+      color: $grey4;
+    }
+    #frequency {
+      color: $grey4;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    .center {
+      height: 743px;
+      width: 415px;
+    }
+    .price {
+      font-size: 64px;
+    }
+    .subscription-type {
+      color: white;
+    }
+    #hide-statement {
+      visibility: visible;
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    .wave-bg {
+      background: none;
+    }
+  }
+}

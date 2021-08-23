@@ -1,0 +1,44 @@
+/*====================================================================================================================
+    This file contains all the global styles import for the entire application
+=====================================================================================================================*/
+
+/*---------------------------------------------------------------------------------------------------------------------
+  Helpers:
+  This are no styles but sass mechanisms that helps define styles in other directory. 
+  This includes like global variables,functions and mixins. 
+-----------------------------------------------------------------------------------------------------------------------*/
+@import "./globalStyles/helpers/variables";
+@import "./globalStyles/helpers/functions";
+@import "./globalStyles/helpers/mixins";
+
+/*---------------------------------------------------------------------------------------------------------------------
+  Base:
+  This contains boilerplate used throughout the entire application. 
+  This includes project-wide typography styles, and stylesheets 
+  that universally reset or normalize default CSS.
+-----------------------------------------------------------------------------------------------------------------------*/
+@import "./globalStyles/base/base";
+
+/*---------------------------------------------------------------------------------------------------------------------
+  Typography: 
+-----------------------------------------------------------------------------------------------------------------------*/
+@import "./globalStyles/typography/typography";
+
+/*---------------------------------------------------------------------------------------------------------------------
+  Layout: 
+  This contains styles for different aspects of the site's structural layout 
+  (think of areas like nav bars, headers, footers, etc.)
+-----------------------------------------------------------------------------------------------------------------------*/
+@import "./globalStyles/layouts/layout"; 
+
+
+/*---------------------------------------------------------------------------------------------------------------------
+  Vendors: 
+-----------------------------------------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------------------------------------
+  Components: 
+  This contain default styles for basic reuseable UI elements like (buttons, cards, form-fields, and others) 
+-----------------------------------------------------------------------------------------------------------------------*/
+@import "./globalStyles/components/components";

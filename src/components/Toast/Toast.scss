@@ -1,0 +1,53 @@
+@import '../../globalStyles/helpers/variables.scss';
+
+#notification-wrapper{
+    display: flex;
+    flex-direction: row;
+    .toast-notification{
+        background: white;
+        font-size: $body;
+        max-height: 350px;
+        max-width: 350px;
+        border-radius: $medium-radius;
+        box-shadow: -8px 0px 0px 0px $secondaryColor, 0px 2.85919px 2.85919px rgba(0, 0, 0, 0.1);
+        @media screen and (max-width: 600px) {
+            max-width: 90%;
+        }
+        
+        .toast{
+            flex-direction: row;
+            display: flex;
+        }
+        
+        .toast-icon{
+            display: grid;
+            place-items: center;
+        }
+        .toast-content{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding-left: 20px;
+            .toast-title{
+                text-align: left;
+                padding-top: 10px;
+                padding-bottom: 5px;
+                font-weight: bold;
+            }
+            .toast-message{
+                padding-bottom: 10px;
+                text-align: left;
+            }
+        }
+        .toast-dismiss{
+            color: $grey3;
+            background: none;
+            position: fixed;
+            right: 3.43%;
+            top: 11.58%;
+            :hover{
+                cursor: grab;
+            }
+        }
+    }
+}

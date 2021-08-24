@@ -10,10 +10,13 @@ import {
 import menuItems from "./menuItems";
 import "./SideMenu.scss";
 import zustech_logo from "../../assets/zustech_logo.png";
+import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { logout } from "../../../../redux/action/auth";
 
 const Menu = () => {
-
-
+  const dispatch = useDispatch();
+  const history = useHistory();
 
   return (
     <div className="sidebar-menu">
@@ -37,7 +40,7 @@ const Menu = () => {
           })}
         </ul>
         <div className="menu-footer">
-          <Link>Log Out</Link>
+          <Link onClick={() => dispatch(logout(history))}>Log Out</Link>
         </div>
       </div>
     </div>

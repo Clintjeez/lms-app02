@@ -148,11 +148,11 @@ const Login = () => {
                 <label for="remember-details">Remember me?</label>
               </div>
               <button type="submit" className="submit-btn">
-              {loading ? <VscLoading /> : "Sign in"}
+                {loading ? <VscLoading /> : "Sign in"}
               </button>
               <div className="forgot-password">
                 <p className="forgot-pwd-link">
-                  <Link to="/ForgotPassword">Forgot password?</Link>
+                  <Link to="/forgot-password">Forgot password?</Link>
                 </p>
               </div>
 

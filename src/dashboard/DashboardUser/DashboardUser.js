@@ -4,10 +4,13 @@ import { Row, Col } from "antd";
 import TopMenu from "./components/TopMenu/TopMenu";
 import SideMenu from "./components/SideMenu/SideMenu";
 import MainView from "./MainView";
+import { useLocation } from "react-router-dom";
 
 import "./DashboardUser.scss";
 
 const StudentDashboard = () => {
+  const { pathname } = useLocation();
+
   return (
     <>
       <div className="dashboard">
@@ -15,10 +18,9 @@ const StudentDashboard = () => {
           <SideMenu />
         </aside>
         <main className="main-wrapper">
-        <TopMenu />
-        <MainView />
+          <TopMenu />
+          <MainView />
         </main>
-        
       </div>
     </>
   );

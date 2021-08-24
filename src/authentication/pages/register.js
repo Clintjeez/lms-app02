@@ -38,7 +38,7 @@ const Register = () => {
     countryId: 1,
     password: "",
     confirmPassword: "",
-    userType: 1,
+    userType: 3,
     deviceId: "",
   });
 

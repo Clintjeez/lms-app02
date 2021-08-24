@@ -6,12 +6,12 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 const CoursesSubPage = () => {
   return (
     <>
-        <Router>
+      {/* <Router>
             <Switch>
                 <Route>
                 </Route>
             </Switch>
-        </Router>
+        </Router> */}
     </>
   );
 };

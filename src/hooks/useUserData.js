@@ -14,14 +14,9 @@ export const useUserData = ()=>{
 
 
 async function getUserData(){
-    const {response} = await  axios.post(API_URL + "signup", {
-        firstname,
-        lastname,
-        email,
-        password,
-      });
+    // const {response} = await  axios.post(API_URL + "signup", {});
     };
-}
+
 
 
 export default function UserDataProvider({children}){

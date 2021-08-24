@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  NavLink,
   Link,
   withRouter,
 } from "react-router-dom";
@@ -28,14 +29,14 @@ const Menu = () => {
           {menuItems.map((item) => {
             const { icon, text, url, id } = item;
             return (
-              <Link to={`/dashboard/${url}`} key={id}>
+              <NavLink to={`/dashboard/${url}`} key={id}>
                 <li>
                   <div className="icon-container">
                     <img src={icon} alt="" />
                   </div>
                   <span>{text}</span>
                 </li>
-              </Link>
+              </NavLink>
             );
           })}
         </ul>

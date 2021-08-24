@@ -10,44 +10,50 @@ const menuItems = [
   {
     icon: dashboard_icon,
     text: "Dashboard",
-    url: "home",
+    url: "",
     id: 1,
+  },
+  {
+    icon: dashboard_icon,
+    text: "Account",
+    url: "account",
+    id: 2,
   },
   {
     icon: course_marketplace_icon,
     text: "Course Marketplace",
     url: "courses",
-    id: 2,
+    id: 3,
   },
   {
     icon: my_courses_icon,
     text: "My Courses",
     url: "my-courses",
-    id: 3,
+    id: 4,
   },
   {
     icon: my_tasks_icon,
     text: "My Tasks",
     url: "my-tasks",
-    id: 4,
+    id: 5,
   },
   {
     icon: grades_stats_icon,
     text: "Grades & Statistics",
     url: "grades",
-    id: 5,
+    id: 6,
   },
   {
     icon: forum_icon,
     text: "Form",
     url: "forum",
-    id: 6,
+    id: 7,
   },
   {
     icon: settings_icon,
     text: "Settings",
     url: "settings",
-    id: 7,
+    id: 8,
   },
 ];
 

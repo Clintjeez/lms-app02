@@ -5,32 +5,29 @@ import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
 import "antd/dist/antd.css";
 
 import "./Account.scss"
+import ChangePassword from "../../../../components/ChangePassword/ChangePassword";
 
 const { TabPane } = Tabs;
 
 const Account = () => {
-    return (
-        <div className="account container">
-           <h2 className="account-title">Account</h2>
-           <div>
-           <Tabs defaultActiveKey="1">
-                <TabPane tab="Account Update" key="1">
-                    <AccountUpdate />
-            </TabPane>
-            <TabPane tab="Account Security" key="2">
-       
-        </TabPane>
-        <TabPane tab="Account Notifications" key="3">
-       
-         </TabPane>
-         <TabPane tab="Delete Account" key="4">
-       
-         </TabPane>
+  return (
+    <div className="account container">
+      <h2 className="account-title">Account</h2>
+      <div>
+        <Tabs defaultActiveKey="1">
+          <TabPane tab="Account Update" key="1">
+            <AccountUpdate />
+          </TabPane>
+          <TabPane tab="Account Security" key="2">
+            <ChangePassword />
+          </TabPane>
+          <TabPane tab="Account Notifications" key="3"></TabPane>
+          <TabPane tab="Delete Account" key="4"></TabPane>
         </Tabs>
-           </div>
-        </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default Account
 

@@ -9,9 +9,9 @@ import { } from ".."
 import axios from "axios";
 
 
-const defaultState = { email: "", oldPassword: "", newPassword: "", confirmNewPassword: "" };
+const defaultState = { email: "" };
 
-export default function ChangePassword() {
+export default function DeleteAccount() {
 
     const [state, setState] = useState(defaultState);
 
@@ -62,22 +62,18 @@ export default function ChangePassword() {
             <div className="row justify-content-center bg-danger">
                 <div className="col-sx-12 col-md-6 col-lg-5  ">
                     <div className="site-card-border-less-wrapper">
-                        <Card title="Change Password" bordered={false}>
+                        <Card title="Delete Account" bordered={false}>
+                            <small>This action is permanent</small>
+                            <br />
+                            <br />
+
                             <form onSubmit={onSubmit}>
-                                <label htmlFor="email">Email</label>
+                                <label htmlFor="email">Enter Your Email Address</label>
                                 <Input type="email" id="email" name="email" value={state.email} onChange={onInputChange} placeholder="Email" required />
-
-                                <label htmlFor="oldPassword">Old Password:</label>
-                                <Input.Password type="password" id="oldPassword" value={state.oldPassword} onChange={onInputChange} name="oldPassword" required />
-
-                                <label htmlFor="newPassword">New Password:</label>
-                                <Input.Password type="password" id="newPassword" value={state.newPassword} onChange={onInputChange} name="newPassword" placeholder="New Password:" required />
-
-                                <label htmlFor="confirmNewPassword">Confirm New Password:</label>
-                                <Input.Password type="password" id="confirmNewPassword" value={state.confirmNewPassword} onChange={onInputChange} name="confirmNewPassword" placeholder="Confirm New Password" required />
                                 <br />
                                 <br />
-                                <Button type="primary" htmlType="submit" style={{ color: "#fff" }}>Change Password</Button>
+
+                                <Button type="primary" htmlType="submit" style={{ color: "#fff" }}>Delete Account</Button>
 
 
                             </form>

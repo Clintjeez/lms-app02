@@ -3,8 +3,9 @@ import { Tabs } from 'antd';
 import { Upload, message, Input, Row, Col, Button} from 'antd';
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
 import "antd/dist/antd.css";
+import DeleteAccount from "../../../../components/DeleteAccount/DeleteAccount";
 
-import "./Account.scss"
+import "./Account.scss";
 import ChangePassword from "../../../../components/ChangePassword/ChangePassword";
 
 const { TabPane } = Tabs;
@@ -22,7 +23,9 @@ const Account = () => {
             <ChangePassword />
           </TabPane>
           <TabPane tab="Account Notifications" key="3"></TabPane>
-          <TabPane tab="Delete Account" key="4"></TabPane>
+          <TabPane tab="Delete Account" key="4">
+            <DeleteAccount />
+          </TabPane>
         </Tabs>
       </div>
     </div>
